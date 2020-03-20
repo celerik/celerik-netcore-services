@@ -6,11 +6,11 @@
 
 ## What's next
 
-Check out the road map of *Celerik.NetCore.Util* [here](ROADMAP.md).
+Check out the road map of *Celerik.NetCore.Services* [here](ROADMAP.md).
 
 ## License
 
-*Celerik.NetCore.Util* is licensed under the [MIT license](LICENSE).
+*Celerik.NetCore.Services* is licensed under the [MIT license](LICENSE).
 
 ## How to Contribute
 Check out the contributing guide [here](CONTRIBUTING.md).

@@ -58,6 +58,7 @@
 
   <ItemGroup>
     <Folder Include="ApiService\Constants\" />
+    <Folder Include="ApiService\Model\" />
   </ItemGroup>
 
 </Project>

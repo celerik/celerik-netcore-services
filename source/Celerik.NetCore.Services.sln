@@ -12,6 +12,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{D3EC0CC7-53AC-4A6C-9047-973452B94369}"
+	ProjectSection(SolutionItems) = preProject
+		Documentation\docfx.json = Documentation\docfx.json
+		Documentation\templates\custom\styles\main.css = Documentation\templates\custom\styles\main.css
+		Documentation\toc.yml = Documentation\toc.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

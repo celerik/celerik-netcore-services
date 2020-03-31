@@ -1,4 +1,10 @@
+<div align="center" markdown="1">
+
+<img src="https://celerik.com/wp-content/uploads/2019/12/celerik-1.svg" alt="Celerik" width="300">
+
 # .NET Core Services Library
+
+</div>
 
 ## What's it
 
@@ -12,5 +18,5 @@ Check out the road map of *Celerik.NetCore.Services* [here](ROADMAP.md).
 
 *Celerik.NetCore.Services* is licensed under the [MIT license](LICENSE).
 
-## How to Contribute
+## How to contribute
 Check out the contributing guide [here](CONTRIBUTING.md).

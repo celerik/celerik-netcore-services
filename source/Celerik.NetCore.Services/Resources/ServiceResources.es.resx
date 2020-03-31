@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ApiService.BulkDelete.Error" xml:space="preserve">
+    <value>La lista de registros no pudo ser eliminada</value>
+  </data>
+  <data name="ApiService.BulkDelete.Success" xml:space="preserve">
+    <value>¡La lista de registros se eliminó exitosamente!</value>
+  </data>
+  <data name="ApiService.BulkInsert.Error" xml:space="preserve">
+    <value>La lista de registros no pudo ser insertada</value>
+  </data>
+  <data name="ApiService.BulkInsert.Success" xml:space="preserve">
+    <value>¡La lista de registros se insertó exitosamente!</value>
+  </data>
+  <data name="ApiService.BulkUpdate.Error" xml:space="preserve">
+    <value>La lista de registros no pudo ser actualizada</value>
+  </data>
+  <data name="ApiService.BulkUpdate.Success" xml:space="preserve">
+    <value>¡La lista de registros se actualizó exitosamente!</value>
+  </data>
+  <data name="ApiService.Delete.Error" xml:space="preserve">
+    <value>El registro no pudo ser eliminado</value>
+  </data>
+  <data name="ApiService.Delete.Success" xml:space="preserve">
+    <value>¡El registro se eliminó exitosamente!</value>
+  </data>
+  <data name="ApiService.Insert.Error" xml:space="preserve">
+    <value>El registro no pudo ser insertado</value>
+  </data>
+  <data name="ApiService.Insert.Success" xml:space="preserve">
+    <value>¡El registro se insertó exitosamente!</value>
+  </data>
+  <data name="ApiService.Read.Error" xml:space="preserve">
+    <value>Los datos no pudieron ser obtenidos</value>
+  </data>
+  <data name="ApiService.Update.Error" xml:space="preserve">
+    <value>El registro no pudo ser actualizado</value>
+  </data>
+  <data name="ApiService.Update.Success" xml:space="preserve">
+    <value>¡El registro se actualizó exitosamente!</value>
+  </data>
+  <data name="MasterDataService.BlockItem.InvalidMasterDataId" xml:space="preserve">
+    <value>El ítem no pudo ser bloqueado. 'MasterDataId' con valor '{0}' no existe</value>
+  </data>
+  <data name="MasterDataService.InsertItem.DuplicatedCode" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Código' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.InsertItem.DuplicatedDescription" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. La 'Descripción' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.InsertItem.DuplicatedId" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Id' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.InsertItem.InvalidParentMasterDataId" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. 'ParentMasterDataId' con valor '{0}' no existe</value>
+  </data>
+  <data name="MasterDataService.InsertItem.MissingId" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Id' es requerido</value>
+  </data>
+  <data name="MasterDataService.InsertItem.UnnecessaryId" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Id' es auto-generado, no debe ser proporcionado, especifique null</value>
+  </data>
+  <data name="MasterDataService.DeleteItem.InvalidMasterDataId" xml:space="preserve">
+    <value>El ítem no pudo ser eliminado. 'MasterDataId' con valor '{0}' no existe</value>
+  </data>
+  <data name="MasterDataService.UnblockItem.InvalidMasterDataId" xml:space="preserve">
+    <value>El ítem no pudo ser desbloqueado. 'MasterDataId' con valor '{0}' no existe</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.DuplicatedCode" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. El 'Código' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.DuplicatedDescription" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. La 'Descripción' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.DuplicatedId" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. El 'Id' con valor '{0}' ya existe</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.InvalidMasterDataId" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. 'MasterDataId' con valor '{0}' no existe</value>
+  </data>
+  <data name="LogService.SearchLogValidator.InvalidLevel" xml:space="preserve">
+    <value>El filtro por 'Nivel' es inválido. Especifique uno de los siguientes: 'Debug', 'Info', 'Warn', 'Error'</value>
+  </data>
+  <data name="SettingService.GetByCategory.InvalidCategory" xml:space="preserve">
+    <value>La 'Categoría' con valor '{0}' no existe</value>
+  </data>
+  <data name="SettingService.GetByCategoryAndKey.InvalidKategoryKey" xml:space="preserve">
+    <value>La 'Categoría' y 'Clave' con valor '{0}' - '{1}' no existe</value>
+  </data>
+  <data name="SettingService.GetById.InvalidSettingId" xml:space="preserve">
+    <value>'SettingId' con valor '{0}' no existe</value>
+  </data>
+  <data name="SettingService.Update.InvalidCategoryKey" xml:space="preserve">
+    <value>La configuración no pudo ser actualizada. La 'Categoría' y 'Clave' son inválidas: '{0}' - '{1}'</value>
+  </data>
+  <data name="SettingService.UpdateById.InvalidId" xml:space="preserve">
+    <value>La configuración no pudo ser actualizada. 'SettingId' es inválido: '{0}'</value>
+  </data>
+  <data name="SettingService.UpdateSeveral.InvalidCategoryKey" xml:space="preserve">
+    <value>La lista de configuraciones no pudo ser actualizada. Algunas 'Categoría' y 'Clave' son inválidas</value>
+  </data>
+  <data name="SettingService.UpdateSeveral.InvalidId" xml:space="preserve">
+    <value>La lista de configuraciones no pudo ser actualizada. Algunos 'SettingId' son inválidos</value>
+  </data>
+  <data name="SettingService.Update.UnallowedUpdate" xml:space="preserve">
+    <value>No está permitido actualizar esta configuración</value>
+  </data>
+  <data name="SettingService.Update.UnauthorizedUpdate" xml:space="preserve">
+    <value>No está autorizado para actualizar esta configuración</value>
+  </data>
+  <data name="SettingService.Validation.Date" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Formato de fecha inválido</value>
+  </data>
+  <data name="SettingService.Validation.Decimals" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Máx '{1}' decimales permitidos, recibidos: '{2}'</value>
+  </data>
+  <data name="SettingService.Validation.Double" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba un número decimal</value>
+  </data>
+  <data name="SettingService.Validation.Email" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba un formato de correo electrónico</value>
+  </data>
+  <data name="SettingService.Validation.Integer" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba un número entero</value>
+  </data>
+  <data name="SettingService.Validation.Max" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. El valor debe ser menor o igual que '{1}'</value>
+  </data>
+  <data name="SettingService.Validation.Min" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. El valor debe ser mayor o igual que '{1}'</value>
+  </data>
+  <data name="SettingService.Validation.Name" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Sólo son permitidos letras y espacios</value>
+  </data>
+  <data name="SettingService.Validation.Phone" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba un número de teléfono con formato: '{1}'</value>
+  </data>
+  <data name="SettingService.Validation.Regex" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba una expresión con el siguiente formato: '{1}'</value>
+  </data>
+  <data name="SettingService.Validation.Required" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. El valor es requerido</value>
+  </data>
+  <data name="SettingService.Validation.UnallowedValue" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. '{1}' no es permitido. Sólo los sigientes valores están permitidos '{2}'</value>
+  </data>
+  <data name="SettingService.Validation.Zip" xml:space="preserve">
+    <value>La configuración '{0}' es inválida. Se esperaba un código postal</value>
+  </data>
+  <data name="SecurityService.Login.InvalidCredentials" xml:space="preserve">
+    <value>¡El email del usuario o la clave son inválidos!</value>
+  </data>
+  <data name="SecurityService.UpdateMyLanguage.Unauthorized" xml:space="preserve">
+    <value>No está autorizado para actualizar el lenguaje</value>
+  </data>
+  <data name="SecurityService.UpdateMyLanguage.InvalidLanguage" xml:space="preserve">
+    <value>El lenguaje no pudo ser actualizado. El 'Código de Lenguaje' no está soportado: '{0}'</value>
+  </data>
+  <data name="SecurityService.UpdateMyLanguage.NothingToUpdate" xml:space="preserve">
+    <value>No hay nada que actualizar. El nuevo lenguaje es igual al anterior</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UnnecessaryId" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. El 'Id' es auto-generado, no debe ser proporcionado, especifique null</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.InvalidOrder" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. El 'Orden' debe estar entre '1' y '{0}'</value>
+  </data>
+  <data name="MasterDataService.DeleteItem.ItemWithChildren" xml:space="preserve">
+    <value>Este ítem tiene hijos y no puede ser eliminado</value>
+  </data>
+  <data name="MasterDataService.InsertItem.UnallowedInsert" xml:space="preserve">
+    <value>No está permitido insertar hijos a este ítem</value>
+  </data>
+  <data name="MasterDataService.InsertItem.UnauthorizedInsertOnParent" xml:space="preserve">
+    <value>No está autorizado para insertar hijos a este ítem</value>
+  </data>
+  <data name="MasterDataService.InsertItem.UnauthorizedInsertOnRoot" xml:space="preserve">
+    <value>No está autorizado para insertar ítems de nivel superior</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.NothingToUpdate" xml:space="preserve">
+    <value>No hay nada para actualizar en este ítem</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UnallowedUpdate" xml:space="preserve">
+    <value>No está permitido actualizar este ítem</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UnauthorizedUpdate" xml:space="preserve">
+    <value>No está autorizado para actualizar este ítem</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UpdateCodeWithReferences" xml:space="preserve">
+    <value>Este ítem tiene referencias y su 'Código' no puede ser actualizado</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UpdateIdWithReferences" xml:space="preserve">
+    <value>Este ítem tiene referencias y su 'Id' no puede ser actualizado</value>
+  </data>
+  <data name="MasterDataService.DeleteItem.UnallowedDelete" xml:space="preserve">
+    <value>No está permitido eliminar este ítem</value>
+  </data>
+  <data name="MasterDataService.DeleteItem.UnauthorizedDelete" xml:space="preserve">
+    <value>No está autorizado para eliminar este ítem</value>
+  </data>
+  <data name="MasterDataService.GetItem.NoResults" xml:space="preserve">
+    <value>No existe un ítem con el criterio especificado</value>
+  </data>
+  <data name="MasterDataService.DeleteItem.ItemWithReferences" xml:space="preserve">
+    <value>Este ítem tiene referencias y no puede ser eliminado</value>
+  </data>
+  <data name="MasterDataService.InsertItem.MissingCode" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Código' es requerido</value>
+  </data>
+  <data name="MasterDataService.InsertItem.UnnecessaryCode" xml:space="preserve">
+    <value>El ítem no pudo ser insertado. El 'Código' es auto-generado, no debe ser proporcionado, especifique null</value>
+  </data>
+  <data name="MasterDataService.UpdateItem.UnnecessaryCode" xml:space="preserve">
+    <value>El ítem no pudo ser actualizado. El 'Código' es auto-generado, no debe ser proporcionado, especifique null</value>
+  </data>
+  <data name="ApiService.Paginate.NoResults" xml:space="preserve">
+    <value>No hay registros con el criterio especificado</value>
+  </data>
+</root>

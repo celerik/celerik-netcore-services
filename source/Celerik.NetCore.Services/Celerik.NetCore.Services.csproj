@@ -33,8 +33,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="ApiService\Utilities\**" />
+    <EmbeddedResource Remove="ApiService\Utilities\**" />
+    <None Remove="ApiService\Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Celerik.NetCore.Util" Version="1.0.3" />
+    <PackageReference Include="Celerik.NetCore.Util" Version="2.0.3" />
     <PackageReference Include="CorrelationId" Version="2.1.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.3" />

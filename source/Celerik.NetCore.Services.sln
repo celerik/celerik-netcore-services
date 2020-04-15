@@ -10,13 +10,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11F0588D-0C5F-4B03-8A6F-821A10739ED2}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documentation", "Documentation", "{D3EC0CC7-53AC-4A6C-9047-973452B94369}"
-	ProjectSection(SolutionItems) = preProject
-		Documentation\docfx.json = Documentation\docfx.json
-		Documentation\templates\custom\styles\main.css = Documentation\templates\custom\styles\main.css
-		Documentation\toc.yml = Documentation\toc.yml
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
 	EndProjectSection
 EndProject
 Global

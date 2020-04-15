@@ -333,4 +333,13 @@
   <data name="ApiService.Paginate.NoResults" xml:space="preserve">
     <value>No hay registros con el criterio especificado</value>
   </data>
+  <data name="EntityFrameworkLogger.OnCommandError.LogMsg" xml:space="preserve">
+    <value>Error en DbCommand</value>
+  </data>
+  <data name="EntityFrameworkLogger.OnCommandExecuted.LogMsg" xml:space="preserve">
+    <value>DbCommand ejecutado!</value>
+  </data>
+  <data name="EntityFrameworkLogger.OnCommandExecuting.LogMsg" xml:space="preserve">
+    <value>Ejecutando DbCommand...</value>
+  </data>
 </root>

@@ -9,7 +9,6 @@
     <IncludeSymbols>true</IncludeSymbols>
     <IsPackable>false</IsPackable>
     <LangVersion>latest</LangVersion>
-    <NeutralLanguage>en</NeutralLanguage>
     <PackageIcon>Celerik.png</PackageIcon>
     <PackageId>Celerik.NetCore.Services.Test</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -24,7 +23,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Title>Celerik.NetCore.Services.Test</Title>
-    <Version>0.0.1</Version>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

@@ -36,9 +36,7 @@ namespace Celerik.NetCore.Services
         /// <param name="name">The name of the string resource.</param>
         /// <returns>The string resource.</returns>
         public static string Get(string name)
-        {
-            return Localizer[name].Value;
-        }
+            => Localizer[name].Value;
 
         /// <summary>
         /// Gets the string resource with the given name and formatted with
@@ -48,8 +46,6 @@ namespace Celerik.NetCore.Services
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource.</returns>
         public static string Get(string name, params object[] arguments)
-        {
-            return Localizer[name, arguments].Value;
-        }
+            => Localizer[name, arguments].Value;
     }
 }

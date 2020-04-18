@@ -117,229 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ApiService.BulkDelete.Error" xml:space="preserve">
-    <value>The list of records could not be deleted</value>
+  <data name="ApiService.Dispose.Disposing" xml:space="preserve">
+    <value>'{0}' disposing resources</value>
   </data>
-  <data name="ApiService.BulkDelete.Success" xml:space="preserve">
+  <data name="ApiService.EndLog.End" xml:space="preserve">
+    <value>'{0}' End</value>
+  </data>
+  <data name="ApiService.EndLog.TotalSeconds" xml:space="preserve">
+    <value>TotalSeconds: {0}</value>
+  </data>
+  <data name="ApiService.Response.BulkDelete" xml:space="preserve">
     <value>The list of records was successfully deleted!</value>
   </data>
-  <data name="ApiService.BulkInsert.Error" xml:space="preserve">
-    <value>The list of records could not be inserted</value>
-  </data>
-  <data name="ApiService.BulkInsert.Success" xml:space="preserve">
+  <data name="ApiService.Response.BulkInsert" xml:space="preserve">
     <value>The list of records was successfully inserted!</value>
   </data>
-  <data name="ApiService.BulkUpdate.Error" xml:space="preserve">
-    <value>The list of records could not be updated</value>
-  </data>
-  <data name="ApiService.BulkUpdate.Success" xml:space="preserve">
+  <data name="ApiService.Response.BulkUpdate" xml:space="preserve">
     <value>The list of records was successfully updated!</value>
   </data>
-  <data name="ApiService.Delete.Error" xml:space="preserve">
-    <value>The record could not be deleted</value>
-  </data>
-  <data name="ApiService.Delete.Success" xml:space="preserve">
+  <data name="ApiService.Response.Delete" xml:space="preserve">
     <value>The record was successfully deleted!</value>
   </data>
-  <data name="ApiService.Insert.Error" xml:space="preserve">
-    <value>The record could not be inserted</value>
-  </data>
-  <data name="ApiService.Insert.Success" xml:space="preserve">
+  <data name="ApiService.Response.Insert" xml:space="preserve">
     <value>The record was successfully inserted!</value>
   </data>
-  <data name="ApiService.Read.Error" xml:space="preserve">
-    <value>The data could not be retrieved</value>
-  </data>
-  <data name="ApiService.Update.Error" xml:space="preserve">
-    <value>The record could not be updated</value>
-  </data>
-  <data name="ApiService.Update.Success" xml:space="preserve">
+  <data name="ApiService.Response.Update" xml:space="preserve">
     <value>The record was successfully updated!</value>
   </data>
-  <data name="MasterDataService.BlockItem.InvalidMasterDataId" xml:space="preserve">
-    <value>The item could no be blocked. 'MasterDataId' with value '{0}' does not exist</value>
+  <data name="ApiService.StartLog.Start" xml:space="preserve">
+    <value>'{0}' Start</value>
   </data>
-  <data name="MasterDataService.InsertItem.DuplicatedCode" xml:space="preserve">
-    <value>The item could not be inserted. 'Code' with value '{0}' already exists</value>
+  <data name="ApiServiceHttp.Call.Error" xml:space="preserve">
+    <value>Error calling service: '{0}'. StatusCode: '{1}'. Details: '{2}'</value>
   </data>
-  <data name="MasterDataService.InsertItem.DuplicatedDescription" xml:space="preserve">
-    <value>The item could not be inserted. 'Description' with value '{0}' already exists</value>
+  <data name="Common.InvalidValue" xml:space="preserve">
+    <value>Invalid '{0}': '{1}'</value>
   </data>
-  <data name="MasterDataService.InsertItem.DuplicatedId" xml:space="preserve">
-    <value>The item could not be inserted. 'Id' with value '{0}' already exists</value>
+  <data name="Common.MissingValue" xml:space="preserve">
+    <value>Missing '{0}' value</value>
   </data>
-  <data name="MasterDataService.InsertItem.InvalidParentMasterDataId" xml:space="preserve">
-    <value>The item could not be inserted. 'ParentMasterDataId' with value '{0}' does not exist</value>
-  </data>
-  <data name="MasterDataService.InsertItem.MissingId" xml:space="preserve">
-    <value>The item could not be inserted. 'Id' is required</value>
-  </data>
-  <data name="MasterDataService.InsertItem.UnnecessaryId" xml:space="preserve">
-    <value>The item could not be inserted. 'Id' is auto-generated, should not be provided, send null</value>
-  </data>
-  <data name="MasterDataService.DeleteItem.InvalidMasterDataId" xml:space="preserve">
-    <value>The item could not be deleted. 'MasterDataId' with value '{0}' does not exist</value>
-  </data>
-  <data name="MasterDataService.UnblockItem.InvalidMasterDataId" xml:space="preserve">
-    <value>The item could not be unblocked. 'MasterDataId' with value '{0}' does not exist</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.DuplicatedCode" xml:space="preserve">
-    <value>The item could not be updated. 'Code' with value '{0}' already exists</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.DuplicatedDescription" xml:space="preserve">
-    <value>The item could not be updated. 'Description' with value '{0}' already exists</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.DuplicatedId" xml:space="preserve">
-    <value>The item could not be updated. 'Id' with value '{0}' already exists</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.InvalidMasterDataId" xml:space="preserve">
-    <value>The item could not be updated. 'MasterDataId' with value '{0}' does not exist</value>
-  </data>
-  <data name="LogService.SearchLogValidator.InvalidLevel" xml:space="preserve">
-    <value>Invalid 'Level' filter. Specify one of the following: 'Debug', 'Info', 'Warn', 'Error' </value>
-  </data>
-  <data name="SettingService.GetByCategory.InvalidCategory" xml:space="preserve">
-    <value>'Category' with value '{0}' does not exist</value>
-  </data>
-  <data name="SettingService.GetByCategoryAndKey.InvalidKategoryKey" xml:space="preserve">
-    <value>'Category' and 'Key' with value '{0}' - '{1}' does not exist</value>
-  </data>
-  <data name="SettingService.GetById.InvalidSettingId" xml:space="preserve">
-    <value>'SettingId' with value '{0}' does not exist</value>
-  </data>
-  <data name="SettingService.Update.InvalidCategoryKey" xml:space="preserve">
-    <value>The setting could not be updated. 'Category' and 'Key' are invalid: '{0}' - '{1}'</value>
-  </data>
-  <data name="SettingService.UpdateById.InvalidId" xml:space="preserve">
-    <value>The setting could not be updated. 'SettingId' is invalid: '{0}'</value>
-  </data>
-  <data name="SettingService.UpdateSeveral.InvalidCategoryKey" xml:space="preserve">
-    <value>The list of settings could not be updated. Some 'Category' and 'Key' are invalid</value>
-  </data>
-  <data name="SettingService.UpdateSeveral.InvalidId" xml:space="preserve">
-    <value>The list of settings could not be updated. Some 'SettingId' are invalid</value>
-  </data>
-  <data name="SettingService.Update.UnallowedUpdate" xml:space="preserve">
-    <value>It is not allowed updating this setting</value>
-  </data>
-  <data name="SettingService.Update.UnauthorizedUpdate" xml:space="preserve">
-    <value>You are not authorized to update this setting</value>
-  </data>
-  <data name="SettingService.Validation.Date" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Invalid date format</value>
-  </data>
-  <data name="SettingService.Validation.Decimals" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Max '{1}' decimals allowed, received: '{2}'</value>
-  </data>
-  <data name="SettingService.Validation.Double" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Expecting a float number</value>
-  </data>
-  <data name="SettingService.Validation.Email" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Invalid email format</value>
-  </data>
-  <data name="SettingService.Validation.Integer" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Expecting an integer number</value>
-  </data>
-  <data name="SettingService.Validation.Max" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Value should be less or equal than '{1}'</value>
-  </data>
-  <data name="SettingService.Validation.Min" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Value should be greater or equal than '{1}'</value>
-  </data>
-  <data name="SettingService.Validation.Name" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Only letters and spaces are allowed</value>
-  </data>
-  <data name="SettingService.Validation.Phone" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Expecting a phone with format: '{1}'</value>
-  </data>
-  <data name="SettingService.Validation.Regex" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Expression should follow this format: '{1}'</value>
-  </data>
-  <data name="SettingService.Validation.Required" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Value is required</value>
-  </data>
-  <data name="SettingService.Validation.UnallowedValue" xml:space="preserve">
-    <value>Setting '{0}' is invalid. '{1}' is not allowed. Only the following values are allowed: '{2}'</value>
-  </data>
-  <data name="SettingService.Validation.Zip" xml:space="preserve">
-    <value>Setting '{0}' is invalid. Expected a valid Zip number</value>
-  </data>
-  <data name="SecurityService.Login.InvalidCredentials" xml:space="preserve">
-    <value>User email or password are invalid!</value>
-  </data>
-  <data name="SecurityService.UpdateMyLanguage.Unauthorized" xml:space="preserve">
-    <value>You are not authorized to update the language</value>
-  </data>
-  <data name="SecurityService.UpdateMyLanguage.InvalidLanguage" xml:space="preserve">
-    <value>The language could not be updated. 'LanguageCode' is not supported: '{0}'</value>
-  </data>
-  <data name="SecurityService.UpdateMyLanguage.NothingToUpdate" xml:space="preserve">
-    <value>There is nothing to update. The new language is the same as the old one</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UnnecessaryId" xml:space="preserve">
-    <value>The item could not be updated. 'Id' is auto-generated, should not be provided, send null</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.InvalidOrder" xml:space="preserve">
-    <value>The item could not be updated. 'Order' should be between '1' and '{0}'</value>
-  </data>
-  <data name="MasterDataService.DeleteItem.ItemWithChildren" xml:space="preserve">
-    <value>This item has children and can not be deleted</value>
-  </data>
-  <data name="MasterDataService.InsertItem.UnallowedInsert" xml:space="preserve">
-    <value>It is not allowed inserting children to this item</value>
-  </data>
-  <data name="MasterDataService.InsertItem.UnauthorizedInsertOnParent" xml:space="preserve">
-    <value>You are not authorized to insert children to this item</value>
-  </data>
-  <data name="MasterDataService.InsertItem.UnauthorizedInsertOnRoot" xml:space="preserve">
-    <value>You are not authorized to insert top level items</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.NothingToUpdate" xml:space="preserve">
-    <value>There is nothing to update for this item</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UnallowedUpdate" xml:space="preserve">
-    <value>It is not allowed updating this item</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UnauthorizedUpdate" xml:space="preserve">
-    <value>You are not authorized to update this item</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UpdateCodeWithReferences" xml:space="preserve">
-    <value>This item has references and its 'Code' can not be updated</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UpdateIdWithReferences" xml:space="preserve">
-    <value>This item has references and its 'Id' can not be updated</value>
-  </data>
-  <data name="MasterDataService.DeleteItem.UnallowedDelete" xml:space="preserve">
-    <value>It is not allowed deleting this item</value>
-  </data>
-  <data name="MasterDataService.DeleteItem.UnauthorizedDelete" xml:space="preserve">
-    <value>You are not authorized to delete this item</value>
-  </data>
-  <data name="MasterDataService.GetItem.NoResults" xml:space="preserve">
-    <value>There is no item matching the criteria</value>
-  </data>
-  <data name="MasterDataService.DeleteItem.ItemWithReferences" xml:space="preserve">
-    <value>This item has references and can not be deleted</value>
-  </data>
-  <data name="MasterDataService.InsertItem.MissingCode" xml:space="preserve">
-    <value>The item could not be inserted. 'Code' is required</value>
-  </data>
-  <data name="MasterDataService.InsertItem.UnnecessaryCode" xml:space="preserve">
-    <value>The item could not be inserted. 'Code' is auto-generated, should not be provided, send null</value>
-  </data>
-  <data name="MasterDataService.UpdateItem.UnnecessaryCode" xml:space="preserve">
-    <value>The item could not be updated. 'Code' is auto-generated, should not be provided, send null</value>
-  </data>
-  <data name="ApiService.Paginate.NoResults" xml:space="preserve">
-    <value>There are no records with the specified criteria</value>
-  </data>
-  <data name="EntityFrameworkLogger.OnCommandError.LogMsg" xml:space="preserve">
-    <value>DbCommand Error</value>
-  </data>
-  <data name="EntityFrameworkLogger.OnCommandExecuted.LogMsg" xml:space="preserve">
-    <value>DbCommand Executed!</value>
-  </data>
-  <data name="EntityFrameworkLogger.OnCommandExecuting.LogMsg" xml:space="preserve">
-    <value>DbCommand Executing...</value>
+  <data name="Common.NoRecordsFound" xml:space="preserve">
+    <value>No records found</value>
   </data>
 </root>

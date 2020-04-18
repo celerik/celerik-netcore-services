@@ -83,46 +83,44 @@ namespace Celerik.NetCore.Services
             HttpMethod method, string endpoint, object payload = null)
         {
             var url = GetUrl(method, endpoint, payload);
+            using var request = new HttpRequestMessage(method, url);
 
-            using (var request = new HttpRequestMessage(method, url))
+            if (method != HttpMethod.Get &&
+                method != HttpMethod.Delete &&
+                payload != null)
             {
-                if (method != HttpMethod.Get &&
-                    method != HttpMethod.Delete &&
-                    payload != null)
-                {
-                    var json = JsonConvert.SerializeObject(payload);
-                    request.Content = new StringContent(json, Encoding.UTF8, "application/json");
-                }
-
-                var response = await _httpClient.SendAsync(request);
-                var content = await response.Content.ReadAsStringAsync();
-
-                if (response.StatusCode == HttpStatusCode.OK)
-                {
-                    var obj = JsonConvert.DeserializeObject<ApiResponse<TOutput>>(content);
-                    return obj;
-                }
-                else if (response.StatusCode == HttpStatusCode.BadRequest)
-                {
-                    if (IsInvalidModelState(content))
-                        content = GetFirstMessage(content);
-
-                    return new ApiResponse<TOutput>
-                    {
-                        Data = default,
-                        Message = content,
-                        MessageType = ApiMessageType.Error,
-                        Success = false
-                    };
-                }
-
-                throw new HttpRequestException(
-                    ServiceResources.Get("ApiServiceHttp.Call.Error",
-                    request.RequestUri.ToString(),
-                    response.StatusCode,
-                    content)
-                );
+                var json = JsonConvert.SerializeObject(payload);
+                request.Content = new StringContent(json, Encoding.UTF8, "application/json");
             }
+
+            var response = await _httpClient.SendAsync(request);
+            var content = await response.Content.ReadAsStringAsync();
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var obj = JsonConvert.DeserializeObject<ApiResponse<TOutput>>(content);
+                return obj;
+            }
+            else if (response.StatusCode == HttpStatusCode.BadRequest)
+            {
+                if (IsInvalidModelState(content))
+                    content = GetFirstMessage(content);
+
+                return new ApiResponse<TOutput>
+                {
+                    Data = default,
+                    Message = content,
+                    MessageType = ApiMessageType.Error,
+                    Success = false
+                };
+            }
+
+            throw new HttpRequestException(
+                ServiceResources.Get("ApiServiceHttp.Call.Error",
+                request.RequestUri.ToString(),
+                response.StatusCode,
+                content)
+            );
         }
 
         /// <summary>

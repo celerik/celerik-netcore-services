@@ -66,7 +66,6 @@ namespace Celerik.NetCore.Services
         /// <returns>JSON string that represents the current object.</returns>
         public override string ToString() => JsonConvert.SerializeObject(this);
 
-
         /// <summary>
         /// Converts an ApiResponse to an ApiResponse&lt;TData&gt;.
         /// </summary>

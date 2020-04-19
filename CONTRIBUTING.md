@@ -43,22 +43,16 @@ Add your service to the right folder or create a new one.
 
 ```
 Celerik.NetCore.Services
-  /ApiService
-  /LogService
-  /MasterDataService
-  /PayPalService
+  /Enumerations
+  /Model
   /Resources
-  /SecurityService
-  /SettingService
+  /Services
+  /Utilities
 Celerik.NetCore.Services.Test
-  /ApiService
-  /LogService
-  /MasterDataService
-  /MockedServices
-  /PayPalService
+  /Model
   /Resources
-  /SecurityService
-  /SettingService
+  /Services
+  /Utilities
 ```
 
 Be sure to add unit testing for new functions you are creating, and that all unit tests PASS.

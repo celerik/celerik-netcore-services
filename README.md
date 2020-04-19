@@ -3,8 +3,7 @@
 <img src="images/celerik.png" alt="Celerik" width="300">
 
 # .NET Core Services Library
-
-![build](https://github.com/celerik/celerik-netcore-services/workflows/build/badge.svg?branch=master&event=push)
+[![build](https://github.com/celerik/celerik-netcore-services/workflows/build/badge.svg)](https://github.com/celerik/celerik-netcore-services/actions?query=workflow%3Abuild)
 [![deploy](https://github.com/celerik/celerik-netcore-services/workflows/deploy/badge.svg)](https://github.com/celerik/celerik-netcore-services/actions?query=workflow%3Adeploy)
 [![documentation](https://github.com/celerik/celerik-netcore-services/workflows/documentation/badge.svg)](https://github.com/celerik/celerik-netcore-services/actions?query=workflow%3Adocumentation)
 [![Coverage Status](https://coveralls.io/repos/github/celerik/celerik-netcore-services/badge.svg)](https://coveralls.io/github/celerik/celerik-netcore-services)

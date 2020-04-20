@@ -1,6 +1,4 @@
-﻿using AutoMapper;
-using Celerik.NetCore.Util;
-using FluentValidation;
+﻿using Celerik.NetCore.Util;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Celerik.NetCore.Services.Test
@@ -9,11 +7,19 @@ namespace Celerik.NetCore.Services.Test
     {
         protected override void AddServices(IServiceCollection services)
         {
-            services.AddBaseServices();
-            services.AddSingleton(new MapperConfiguration(c => { }).CreateMapper());
-            services.AddTransient<ApiServiceArgs<ServiceBaseTest>>();
-            services.AddTransient<ICalculatorService, CalculatorService>();
-            services.AddTransient<IValidator<PaginationRequest>, PaginationRequestValidator<PaginationRequest>>();
+            services.AddCoreServices<ServiceBaseTest>((config, apiConfig) =>
+                {
+                    config["ServiceType"] = ApiServiceType.ServiceMock.GetDescription();
+                })
+                .AddAutomapper()
+                .AddValidators(() =>
+                {
+                    services.AddValidator<PaginationRequest, PaginationRequestValidator<PaginationRequest>>();
+                })
+                .AddBusinesServices(() =>
+                {
+                    services.AddTransient<ICalculatorService, CalculatorService>();
+                });
         }
     }
 }

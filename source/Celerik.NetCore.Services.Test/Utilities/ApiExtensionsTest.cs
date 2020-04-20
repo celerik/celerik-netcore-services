@@ -12,6 +12,7 @@ namespace Celerik.NetCore.Services.Test
         public void GetServiceTypeUndefined()
         {
             var config = GetService<IConfiguration>();
+            config["ServiceType"] = null;
             config.GetServiceType();
         }
 

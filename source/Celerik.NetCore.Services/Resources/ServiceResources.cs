@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using Celerik.NetCore.Util;
 using Microsoft.Extensions.Localization;
 
@@ -23,7 +24,7 @@ namespace Celerik.NetCore.Services
         {
             get
             {
-                if (_localizer == null)
+                if (_localizer == null && UtilResources.Factory != null)
                     _localizer = UtilResources.Factory.Create(typeof(ServiceResources));
 
                 return _localizer;
@@ -36,7 +37,7 @@ namespace Celerik.NetCore.Services
         /// <param name="name">The name of the string resource.</param>
         /// <returns>The string resource.</returns>
         public static string Get(string name)
-            => Localizer[name].Value;
+            => Localizer?[name].Value ?? name;
 
         /// <summary>
         /// Gets the string resource with the given name and formatted with
@@ -46,6 +47,7 @@ namespace Celerik.NetCore.Services
         /// <param name="arguments">The values to format the string with.</param>
         /// <returns>The formatted string resource.</returns>
         public static string Get(string name, params object[] arguments)
-            => Localizer[name, arguments].Value;
+            => Localizer?[name, arguments].Value ??
+                string.Format(CultureInfo.InvariantCulture, name, arguments);
     }
 }

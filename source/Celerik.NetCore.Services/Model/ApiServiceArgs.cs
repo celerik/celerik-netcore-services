@@ -21,8 +21,8 @@ namespace Celerik.NetCore.Services
         /// instance.</param>
         /// <param name="config">Reference to the current IConfiguration
         /// instance.</param>
-        /// <param name="stringLocalizerFactory">Factory to create IStringLocalizer
-        /// objects.</param>
+        /// <param name="stringLocalizerFactory">Reference to the current
+        /// IStringLocalizerFactory.</param>
         /// <param name="logger">Reference to the current ILogger
         /// instance.</param>
         /// <param name="mapper">Reference to the current IMapper

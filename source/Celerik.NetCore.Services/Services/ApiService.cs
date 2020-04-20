@@ -10,7 +10,6 @@ using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace Celerik.NetCore.Services
@@ -33,24 +32,29 @@ namespace Celerik.NetCore.Services
         private Stopwatch _stopWatch = null;
 
         /// <summary>
+        /// Reference to te current IHttpContextAccessor instance.
+        /// </summary>
+        private IHttpContextAccessor _httpContextAccessor;
+
+        /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="args">Encapsulates the properties to initialize a new
-        /// ApiService.</param>
+        /// ApiServiceArgs&lt;TLoggerCategory&gt;.</param>
+        /// <exception cref="ArgumentNullException">Args is null.</exception>
         public ApiService(ApiServiceArgs<TLoggerCategory> args)
         {
             if (args == null)
-                throw new ArgumentException(
+                throw new ArgumentNullException(
                     UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(args)));
 
             _stopWatch = new Stopwatch();
+            _httpContextAccessor = args.HttpContextAccessor;
 
             ServiceProvider = args.ServiceProvider;
             Config = args.Config;
-            StringLocalizerFactory = args.StringLocalizerFactory;
             Logger = args.Logger;
             Mapper = args.Mapper;
-            HttpContextAccessor = args.HttpContextAccessor;
 
             UtilResources.Initialize(args.StringLocalizerFactory);
         }
@@ -66,11 +70,6 @@ namespace Celerik.NetCore.Services
         protected IConfiguration Config { get; private set; }
 
         /// <summary>
-        /// Factory to create IStringLocalizer objects.
-        /// </summary>
-        protected IStringLocalizerFactory StringLocalizerFactory { get; private set; }
-
-        /// <summary>
         /// Reference to the current ILogger instance.
         /// </summary>
         protected ILogger<TLoggerCategory> Logger { get; private set; }
@@ -81,14 +80,9 @@ namespace Celerik.NetCore.Services
         protected IMapper Mapper { get; private set; }
 
         /// <summary>
-        /// Reference to the current IHttpContextAccessor instance.
-        /// </summary>
-        protected IHttpContextAccessor HttpContextAccessor { get; private set; }
-
-        /// <summary>
         /// Gets a reference to the current HttpContext.
         /// </summary>
-        protected HttpContext HttpContext => HttpContextAccessor?.HttpContext;
+        protected HttpContext HttpContext => _httpContextAccessor?.HttpContext;
 
         /// <summary>
         /// Performs application-defined tasks associated with freeing, releasing, or resetting
@@ -116,12 +110,12 @@ namespace Celerik.NetCore.Services
             if (disposing)
             {
                 _stopWatch = null;
+                _httpContextAccessor = null;
+
                 ServiceProvider = null;
                 Config = null;
-                StringLocalizerFactory = null;
                 Logger = null;
                 Mapper = null;
-                HttpContextAccessor = null;
             }
 
             _isDisposed = true;
@@ -287,12 +281,13 @@ namespace Celerik.NetCore.Services
         /// <typeparam name="TResult">The entity result type.</typeparam>
         /// <param name="query">Object against we are querying.</param>
         /// <param name="request">Object with request arguments.</param>
-        /// <returns>Paginated result.</returns>
-        public async Task<ApiResponse<PaginationResult<TResult>>> Paginate<TRequest, TResult>(
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
+        public async Task<ApiResponse<PaginationResult<TResult>>> PaginateAsync<TRequest, TResult>(
             IQueryable<TRequest> query,
             PaginationRequest request)
         {
-            var pagination = await query.Paginate(request);
+            var pagination = await query.PaginateAsync(request);
 
             var castedPagination = new PaginationResult<TResult>
             {

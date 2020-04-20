@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ApiBuilder.MethodAlreadyCalled" xml:space="preserve">
+    <value>Este método ya fue llamado: '{0}'</value>
+  </data>
   <data name="ApiService.Dispose.Disposing" xml:space="preserve">
     <value>'{0}' liberando recursos</value>
   </data>
@@ -146,9 +149,6 @@
   </data>
   <data name="ApiService.StartLog.Start" xml:space="preserve">
     <value>'{0}' Inicia</value>
-  </data>
-  <data name="ApiServiceHttp.Call.Error" xml:space="preserve">
-    <value>Error llamando servicio: '{0}'. CodigoEstado: '{1}'. Detalle: '{2}'</value>
   </data>
   <data name="Common.InvalidValue" xml:space="preserve">
     <value>'{0}' es inválido: '{1}'</value>

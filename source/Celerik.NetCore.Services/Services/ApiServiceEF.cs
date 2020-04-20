@@ -19,17 +19,15 @@ namespace Celerik.NetCore.Services
         /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="args">Encapsulates the properties to initialize a new
-        /// ApiService.</param>
+        /// ApiService&lt;TLoggerCategory&gt;.</param>
         public ApiServiceEF(ApiServiceArgs<TLoggerCategory> args)
-            : base(args)
-        {
-        }
+            : base(args) { }
 
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
         /// <param name="args">Encapsulates the properties to initialize a new
-        /// ApiServiceEF&lt;TDbContext&gt;.</param>
+        /// ApiServiceEF&lt;TLoggerCategory, TDbContext&gt;.</param>
         public ApiServiceEF(ApiServiceArgsEF<TLoggerCategory, TDbContext> args)
             : base(args)
             => DbContext = args.DbContext;
@@ -47,8 +45,9 @@ namespace Celerik.NetCore.Services
         /// <param name="entity">The entity to Add/Insert/Delete.</param>
         /// <param name="commit">Indicates wheather changes should be
         /// commited immediately.</param>
-        /// <returns>Task result.</returns>
-        protected virtual async Task Save(
+        /// <returns>The task object representing the asynchronous operation.
+        /// </returns>
+        protected virtual async Task SaveAsync(
             ApiOperationType operation,
             object entity,
             bool commit = true)

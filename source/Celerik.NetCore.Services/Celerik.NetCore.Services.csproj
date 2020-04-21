@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.Services</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
-    <PackageReleaseNotes>Added ApiBuilder class to add core services</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated Celerik.NetCore.Util reference to 2.0.16</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Title>Celerik.NetCore.Services</Title>
-    <Version>1.0.3</Version>
+    <Version>2.0.16</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -39,7 +39,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
-    <PackageReference Include="Celerik.NetCore.Util" Version="2.0.15" />
+    <PackageReference Include="Celerik.NetCore.Util" Version="2.0.16" />
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

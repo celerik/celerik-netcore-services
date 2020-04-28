@@ -38,37 +38,42 @@ namespace Celerik.NetCore.Services
         protected TDbContext DbContext { get; private set; }
 
         /// <summary>
+        /// Sets the current ConnectionString.
+        /// </summary>
+        /// <param name="connectionString">String used to open the
+        /// connection.</param>
+        protected void SetConnectionString(string connectionString)
+            => DbContext.Database.GetDbConnection().ConnectionString = connectionString;
+
+        /// <summary>
         /// Performs an Add/Insert/Delete of an entity into the DbContext.
         /// </summary>
         /// <param name="operation">The type of operation to perform
         /// on the DbContext.</param>
         /// <param name="entity">The entity to Add/Insert/Delete.</param>
-        /// <param name="commit">Indicates wheather changes should be
+        /// <param name="commit">Indicates whether changes should be
         /// commited immediately.</param>
         /// <returns>The task object representing the asynchronous operation.
         /// </returns>
         protected virtual async Task SaveAsync(
-            ApiOperationType operation,
+            ApiChangeAction operation,
             object entity,
             bool commit = true)
         {
             switch (operation)
             {
-                case ApiOperationType.Insert:
-                case ApiOperationType.BulkInsert:
+                case ApiChangeAction.Insert:
                     DbContext.Add(entity);
                     break;
-                case ApiOperationType.Update:
-                case ApiOperationType.BulkUpdate:
+                case ApiChangeAction.Update:
                     DbContext.Update(entity);
                     break;
-                case ApiOperationType.Delete:
-                case ApiOperationType.BulkDelete:
+                case ApiChangeAction.Delete:
                     DbContext.Remove(entity);
                     break;
             }
 
-            if (commit && operation != ApiOperationType.Read)
+            if (commit)
                 await DbContext.SaveChangesAsync();
         }
 

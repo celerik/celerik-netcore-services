@@ -1,5 +1,4 @@
-﻿using Celerik.NetCore.Util;
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Celerik.NetCore.Services.Test

@@ -129,34 +129,43 @@
   <data name="ApiService.EndLog.TotalSeconds" xml:space="preserve">
     <value>SegundosTotales: {0}</value>
   </data>
-  <data name="ApiService.Response.BulkDelete" xml:space="preserve">
-    <value>¡La lista de registros se eliminó exitosamente!</value>
-  </data>
-  <data name="ApiService.Response.BulkInsert" xml:space="preserve">
-    <value>¡La lista de registros se insertó exitosamente!</value>
-  </data>
-  <data name="ApiService.Response.BulkUpdate" xml:space="preserve">
-    <value>¡La lista de registros se actualizó exitosamente!</value>
-  </data>
-  <data name="ApiService.Response.Delete" xml:space="preserve">
-    <value>¡El registro se eliminó exitosamente!</value>
-  </data>
-  <data name="ApiService.Response.Insert" xml:space="preserve">
-    <value>¡El registro se insertó exitosamente!</value>
-  </data>
-  <data name="ApiService.Response.Update" xml:space="preserve">
-    <value>¡El registro se actualizó exitosamente!</value>
-  </data>
   <data name="ApiService.StartLog.Start" xml:space="preserve">
     <value>'{0}' Inicia</value>
   </data>
-  <data name="Common.InvalidValue" xml:space="preserve">
-    <value>'{0}' es inválido: '{1}'</value>
+  <data name="Common.BadRequestCallingService" xml:space="preserve">
+    <value>Solicitud incorrecta llamando servicio: '{0}'. Detalle: '{1}'</value>
   </data>
-  <data name="Common.MissingValue" xml:space="preserve">
-    <value>Se esperaba un valor para '{0}'</value>
+  <data name="Common.ErrorCallingService" xml:space="preserve">
+    <value>Error llamando servicio: '{0}'. Código de estado: '{1}'. Detalle: '{2}'</value>
+  </data>
+  <data name="Common.FactoryException" xml:space="preserve">
+    <value>No se puede crear una instancia de: '{0}'</value>
+  </data>
+  <data name="Common.InjectException" xml:space="preserve">
+    <value>No se puede inyectar una instancia de: '{0}'. '{1}' es inválido: '{2}'</value>
   </data>
   <data name="Common.NoRecordsFound" xml:space="preserve">
     <value>No se encontraron registros</value>
+  </data>
+  <data name="Common.RecordDeletedOk" xml:space="preserve">
+    <value>¡El registro se eliminó exitosamente!</value>
+  </data>
+  <data name="Common.RecordInsertedOk" xml:space="preserve">
+    <value>¡El registro se insertó exitosamente!</value>
+  </data>
+  <data name="Common.RecordUpdatedOk" xml:space="preserve">
+    <value>¡El registro se actualizó exitosamente!</value>
+  </data>
+  <data name="ConfigKeyNotFound" xml:space="preserve">
+    <value>Llave de configuración no encontrada: '{0}'</value>
+  </data>
+  <data name="ConfigValueInvalid" xml:space="preserve">
+    <value>El valor de configuración '{0}' es inválido: '{1}'</value>
+  </data>
+  <data name="SortDirectionInvalid" xml:space="preserve">
+    <value>'Sort Direction' debe ser 'asc' o 'desc'</value>
+  </data>
+  <data name="SortKeyInvalid" xml:space="preserve">
+    <value>'Sort Key' debe ser uno de los siguientes valores: '{0}'</value>
   </data>
 </root>

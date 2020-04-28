@@ -1,8 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Celerik.NetCore.Services.Test
-{
+﻿namespace Celerik.NetCore.Services.Test
+{/*
     public interface ICalculatorService
     {
         ApiResponse<int> Plus(int a, int b);
@@ -22,7 +19,7 @@ namespace Celerik.NetCore.Services.Test
             Logger.LogDebug($"HttpContext: {HttpContext}");
 
             var c = a + b;
-            var response = Ok<int>(c, ApiOperationType.Delete);
+            var response = Ok<int>(c, ApiChangeAction.Delete);
 
             EndLog();
             return response;
@@ -50,5 +47,5 @@ namespace Celerik.NetCore.Services.Test
                 }
             }
         }
-    }
+    }*/
 }

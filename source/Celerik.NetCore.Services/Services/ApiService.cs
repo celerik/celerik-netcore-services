@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Globalization;
 using AutoMapper;
 using Celerik.NetCore.Util;
 using FluentValidation;
@@ -46,7 +43,7 @@ namespace Celerik.NetCore.Services
         {
             if (args == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(args)));
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(args)));
 
             _stopWatch = new Stopwatch();
             _httpContextAccessor = args.HttpContextAccessor;
@@ -85,8 +82,8 @@ namespace Celerik.NetCore.Services
         protected HttpContext HttpContext => _httpContextAccessor?.HttpContext;
 
         /// <summary>
-        /// Performs application-defined tasks associated with freeing, releasing, or resetting
-        /// unmanaged resources.
+        /// Performs application-defined tasks associated with freeing,
+        /// releasing, or resetting unmanaged resources.
         /// </summary>
         public void Dispose()
         {
@@ -95,8 +92,8 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
-        /// Performs application-defined tasks associated with freeing, releasing, or resetting
-        /// unmanaged resources.
+        /// Performs application-defined tasks associated with freeing,
+        /// releasing, or resetting unmanaged resources.
         /// </summary>
         /// <param name="disposing">Indicates whether it is disposing.</param>
         protected virtual void Dispose(bool disposing)
@@ -104,8 +101,8 @@ namespace Celerik.NetCore.Services
             if (_isDisposed)
                 return;
 
-            var type = GetType().Name;
-            Logger.LogDebug(ServiceResources.Get("ApiService.Dispose.Disposing"), type);
+            var typeName = GetType().Name;
+            Logger.LogDebug(ServiceResources.Get("ApiService.Dispose.Disposing"), typeName);
 
             if (disposing)
             {
@@ -150,130 +147,149 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
-        /// Validates the received payload using FluentValidation.
+        /// Validates the passed-in payload using FluentValidation.
         /// </summary>
         /// <typeparam name="TPayload">The type of the payload object.
         /// </typeparam>
         /// <param name="payload">The object to be validated.</param>
-        /// <param name="message">Message detailing the error in case
-        /// the payload is invalid.</param>
+        /// <param name="message">Message describing error, null if
+        /// the payload is valid.</param>
+        /// <param name="property">Name of the invalid property, null if
+        /// the payload is valid or if the payload is null.</param>
         /// <returns>True if the payload is valid.</returns>
-        protected bool Validate<TPayload>(TPayload payload, out string message)
+        protected bool Validate<TPayload>(
+            TPayload payload, out string message, out string property)
         {
+            message = null;
+            property = null;
+
             if (payload == null)
-                message = UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(payload));
+                message = UtilResources.Get("ArgumentCanNotBeNull", nameof(payload));
             else
             {
                 var validator = ServiceProvider.GetRequiredService<IValidator<TPayload>>();
                 var result = validator.Validate(payload);
 
-                message = result.IsValid
-                    ? null
-                    : result.Errors[0].ErrorMessage;
+                if (!result.IsValid)
+                {
+                    var firstError = result.Errors[0];
+                    message = firstError.ErrorMessage;
+                    property = firstError.PropertyName;
+                }
             }
 
             return message == null;
         }
 
         /// <summary>
-        /// Creates an Ok response based on the passed-in Data and the
-        /// optional localized Message.
+        /// Creates an Error response based on the passed-in localized
+        /// Message and Property.
         /// </summary>
-        /// <typeparam name="TResponse">The type to which this object
-        /// will be mapped.</typeparam>
-        /// <param name="data">Data sent as the response.</param>
-        /// <param name="message">Optional localized Message.</param>
-        /// <returns>Ok response based on the passed-in Data and the
-        /// optional localized Message.</returns>
-        protected ApiResponse<TResponse> Ok<TResponse>(object data, string message = null) =>
-            new ApiResponse<TResponse>
-            {
-                Data = Mapper.Map<TResponse>(data),
-                Message = string.IsNullOrEmpty(message)
-                    ? null
-                    : message,
-                MessageType = string.IsNullOrEmpty(message)
-                    ? (ApiMessageType?)null
-                    : ApiMessageType.Success,
-                Success = true
-            };
-
-        /// <summary>
-        /// Creates an Ok response based on the passed-in Data and the
-        /// operation type.
-        /// </summary>
-        /// <typeparam name="TResponse">The type to which this object
-        /// will be mapped.</typeparam>
-        /// <param name="data">Data sent as the response.</param>
-        /// <param name="type">The type of operation.</param>
-        /// <returns>Ok response based on the passed-in Data and the
-        /// operation type.</returns>
-        public ApiResponse<TResponse> Ok<TResponse>(object data, ApiOperationType type)
+        /// <typeparam name="TStatusCode">Type of the StatusCode property
+        /// in the ApiError object.</typeparam>
+        /// <param name="message">Localized Message describing the error.
+        /// </param>
+        /// <param name="property">Name of the invalid property, null if
+        /// the payload is null.</param>
+        /// <returns>Error response based on the passed-in localized
+        /// Message and Property.</returns>
+        protected ApiError<TStatusCode> Error<TStatusCode>(
+            string message, string property)
+            where TStatusCode : struct, IConvertible
         {
-            var message = (string)null;
-            var messageType = (ApiMessageType?)null;
+            var statusCode = property == null
+                ? ApiStatusCode.BadRequest.ToString()
+                : string.Format(CultureInfo.InvariantCulture, ApiStatusCode.Format.GetDescription(), property);
 
-            switch (type)
+            var apiError = new ApiError<TStatusCode>
             {
-                case ApiOperationType.Read:
-                    if (data is ICollection &&
-                       (data as ICollection).Count == 0)
-                    {
-                        message = ServiceResources.Get("Common.NoRecordsFound");
-                        messageType = ApiMessageType.Info;
-                    }
-                    break;
-                case ApiOperationType.Insert:
-                    message = ServiceResources.Get("ApiService.Response.Insert");
-                    messageType = ApiMessageType.Success;
-                    break;
-                case ApiOperationType.BulkInsert:
-                    message = ServiceResources.Get("ApiService.Response.BulkInsert");
-                    messageType = ApiMessageType.Success;
-                    break;
-                case ApiOperationType.Update:
-                    message = ServiceResources.Get("ApiService.Response.Update");
-                    messageType = ApiMessageType.Success;
-                    break;
-                case ApiOperationType.BulkUpdate:
-                    message = ServiceResources.Get("ApiService.Response.BulkUpdate");
-                    messageType = ApiMessageType.Success;
-                    break;
-                case ApiOperationType.Delete:
-                    message = ServiceResources.Get("ApiService.Response.Delete");
-                    messageType = ApiMessageType.Success;
-                    break;
-                case ApiOperationType.BulkDelete:
-                    message = ServiceResources.Get("ApiService.Response.BulkDelete");
-                    messageType = ApiMessageType.Success;
-                    break;
-            }
-
-            return new ApiResponse<TResponse>
-            {
-                Data = Mapper.Map<TResponse>(data),
                 Message = message,
-                MessageType = messageType,
-                Success = true
+                StatusCode = EnumUtility.GetValueFromDescription<TStatusCode>(statusCode)
             };
+
+            Logger.LogWarning(apiError.Message);
+
+            return apiError;
         }
 
         /// <summary>
-        /// Creates an Error response based on the passed-in localized
-        /// Message.
+        /// Creates an Error response based on the passed-in statusCode.
         /// </summary>
-        /// <param name="message">Localized Message detailing the error.
-        /// </param>
-        /// <returns>Error response based on the passed-in localized
-        /// Message.</returns>
-        protected static ApiResponse Error(string message) =>
-            new ApiResponse
+        /// <typeparam name="TStatusCode">Type of the StatusCode property
+        /// in the ApiError object.</typeparam>
+        /// <param name="statusCode">The status code</param>
+        /// <returns>Error response based on the passed-in statusCode.</returns>
+        protected ApiError<TStatusCode> Error<TStatusCode>(TStatusCode statusCode)
+            where TStatusCode : struct, IConvertible
+        {
+            var apiError = new ApiError<TStatusCode>
             {
-                Message = message,
-                MessageType = ApiMessageType.Error,
-                Success = false
+                Message = statusCode.ToString(),
+                StatusCode = statusCode
             };
 
+            Logger.LogWarning(apiError.Message);
+
+            return apiError;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TData"></typeparam>
+        /// <typeparam name="TStatusCode"></typeparam>
+        /// <param name="data"></param>
+        /// <param name="statusCode"></param>
+        /// <returns></returns>
+        protected ApiResponse<TData, TStatusCode> Ok<TData, TStatusCode>(object data, TStatusCode statusCode)
+            where TData : class
+            where TStatusCode : struct, IConvertible
+        {
+            var response = new ApiResponse<TData, TStatusCode>
+            {
+                Data = Mapper.Map<TData>(data),
+                Success = true,
+                Message = statusCode.ToString(),
+                MessageType = ApiMessageType.Success,
+                StatusCode = statusCode
+            };
+
+            return response;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <typeparam name="TData"></typeparam>
+        /// <typeparam name="TStatusCode"></typeparam>
+        /// <param name="response"></param>
+        /// <param name="successMessageCode"></param>
+        protected void ProcessResponse<TData, TStatusCode>(
+            ApiResponse<TData, TStatusCode> response,
+            TStatusCode successMessageCode)
+            where TData : class
+            where TStatusCode : struct, IConvertible
+        {
+            if (response?.Data != null)
+            {
+                response.Success = true;
+                response.Message = successMessageCode.ToString();
+                response.MessageType = ApiMessageType.Success;
+                response.StatusCode = successMessageCode;
+            }
+            else
+            {
+                response.Success = false;
+                response.MessageType = ApiMessageType.Error;
+
+                if (response.Message == null)
+                {
+                    response.Message = null;
+                    response.Message = response.StatusCode.ToString();
+                }
+            }
+        }
+        /*
         /// <summary>
         /// Paginates this query according to the passed-in request params.
         /// </summary>
@@ -311,9 +327,9 @@ namespace Celerik.NetCore.Services
                     Success = true
                 };
             else
-                response = Ok<PaginationResult<TResult>>(castedPagination);
+                response = Ok(castedPagination);
 
             return response;
-        }
+        }*/
     }
 }

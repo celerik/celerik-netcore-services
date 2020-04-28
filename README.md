@@ -13,7 +13,7 @@
 
 ## What's it
 
-*Celerik.NetCore.Services* provides a codebaseline for .NET Core service-oriented projects including: base service definition, service argument injection, baseline for services implementing Enity Framework data access and some utilities to configure the service pipeline.
+*Celerik.NetCore.Services* provides a code baseline for .NET Core service-oriented projects including configuration, standard service builder, common enumerations, common exceptions, a standar response model, pagination, resources, base service classes and utilities.
 
 ## Quick start
 

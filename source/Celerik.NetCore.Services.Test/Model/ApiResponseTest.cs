@@ -1,7 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Celerik.NetCore.Services.Test
-{
+﻿namespace Celerik.NetCore.Services.Test
+{/*
     [TestClass]
     public class ApiResponseTest : ServiceBaseTest
     {
@@ -50,5 +48,5 @@ namespace Celerik.NetCore.Services.Test
                 toString
             );
         }
-    }
+    }*/
 }

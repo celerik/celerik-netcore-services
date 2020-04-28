@@ -1,4 +1,5 @@
 ﻿using Celerik.NetCore.Util;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Celerik.NetCore.Services.Test
@@ -7,18 +8,19 @@ namespace Celerik.NetCore.Services.Test
     {
         protected override void AddServices(IServiceCollection services)
         {
-            services.AddCoreServices<ServiceBaseTest>((config, apiConfig) =>
-                {
-                    config["ServiceType"] = ApiServiceType.ServiceMock.GetDescription();
-                })
+            var config = GetService<IConfiguration>();
+            config["ServiceType"] = ApiServiceType.ServiceMock.GetDescription();
+
+            services.AddCoreServices<ServiceBaseTest>(config)
                 .AddAutomapper()
                 .AddValidators(() =>
                 {
                     services.AddValidator<PaginationRequest, PaginationRequestValidator<PaginationRequest>>();
+                    services.AddValidator<PaginationRequest<Cat>, PaginationRequestValidator<PaginationRequest<Cat>, Cat>>();
                 })
-                .AddBusinesServices(() =>
+                .AddBusinesServices(config =>
                 {
-                    services.AddTransient<ICalculatorService, CalculatorService>();
+                    //services.AddTransient<ICalculatorService, CalculatorService>();
                 });
         }
     }

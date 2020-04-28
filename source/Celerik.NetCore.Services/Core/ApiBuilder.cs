@@ -1,17 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using Celerik.NetCore.Util;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 
 namespace Celerik.NetCore.Services
 {
     /// <summary>
-    /// Builder to add core services to the passed-in service collection.
+    /// Builder to add core services to a service collection.
     /// </summary>
     /// <typeparam name="TLoggerCategory">The type who's name is used
     /// for the logger category name.</typeparam>
@@ -25,19 +29,9 @@ namespace Celerik.NetCore.Services
         private readonly IServiceCollection _services;
 
         /// <summary>
-        /// Reference to the current ServiceProvider instance.
-        /// </summary>
-        private readonly ServiceProvider _serviceProvider;
-
-        /// <summary>
         /// Reference to the current IConfiguration instance.
         /// </summary>
         private readonly IConfiguration _config;
-
-        /// <summary>
-        /// Object with the configuration needed to add core services.
-        /// </summary>
-        private readonly ApiConfig _apiConfig;
 
         /// <summary>
         /// List containing the names of the methods already executed.
@@ -49,12 +43,12 @@ namespace Celerik.NetCore.Services
         /// </summary>
         /// <param name="services">Reference to the current IServiceCollection
         /// instance.</param>
-        public ApiBuilder(IServiceCollection services)
+        /// <param name="config">Reference to the current IConfiguration
+        /// instance.</param>
+        public ApiBuilder(IServiceCollection services, IConfiguration config)
         {
             _services = services;
-            _serviceProvider = services.BuildServiceProvider();
-            _config = _serviceProvider.GetRequiredService<IConfiguration>();
-            _apiConfig = new ApiConfig();
+            _config = config;
             _invokedMethods = new List<string>();
         }
 
@@ -64,12 +58,15 @@ namespace Celerik.NetCore.Services
         public ApiServiceType ServiceType => _config.GetServiceType();
 
         /// <summary>
-        /// Adds localization to the current service collection.
+        /// Adds services required for application localization.
         /// </summary>
         /// <returns>Reference to the current ApiBuilder.</returns>
+        /// <param name="options">Provides programmatic configuration
+        /// for localization.</param>
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
-        internal ApiBuilder<TLoggerCategory, TDbContext> AddLocalization()
+        internal ApiBuilder<TLoggerCategory, TDbContext> AddLocalization(
+            LocalizationOptions options = null)
         {
             if (IsInvoked(nameof(AddLocalization)))
                 throw new InvalidOperationException(
@@ -78,8 +75,8 @@ namespace Celerik.NetCore.Services
 
             _services.AddLocalization(opts =>
             {
-                if (_apiConfig.ResourcesPath != null)
-                    opts.ResourcesPath = _apiConfig.ResourcesPath;
+                if (options != null)
+                    opts.ResourcesPath = options.ResourcesPath;
             });
 
             _invokedMethods.Add(nameof(AddLocalization));
@@ -87,48 +84,52 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
-        /// Sets the current configuration.
+        /// Adds logging services to the current service collection.
         /// </summary>
-        /// <param name="configure">The configure callback.</param>
+        /// <param name="options">Provides programmatic configuration
+        /// for the Console logger.</param>
         /// <returns>Reference to the current ApiBuilder.</returns>
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
-        internal ApiBuilder<TLoggerCategory, TDbContext> SetConfiguration(
-            Action<IConfiguration, ApiConfig> configure = null)
-        {
-            if (IsInvoked(nameof(SetConfiguration)))
-                throw new InvalidOperationException(
-                    ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(SetConfiguration))
-                );
-
-            configure?.Invoke(_config, _apiConfig);
-
-            _invokedMethods.Add(nameof(SetConfiguration));
-            return this;
-        }
-
-        /// <summary>
-        /// Adds logging to the current service collection.
-        /// </summary>
-        /// <returns>Reference to the current ApiBuilder.</returns>
-        /// <exception cref="InvalidOperationException">If this method
-        /// was already called.</exception>
-        internal ApiBuilder<TLoggerCategory, TDbContext> AddLogging()
+        internal ApiBuilder<TLoggerCategory, TDbContext> AddLogging(
+            ConsoleLoggerOptions options = null)
         {
             if (IsInvoked(nameof(AddLogging)))
                 throw new InvalidOperationException(
                     ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(AddLogging))
                 );
 
-            _services.AddLogging(configure =>
+            _services.AddLogging(builder =>
             {
-                configure.ClearProviders();
-                configure.AddConsole(console =>
-                {
-                    if (_apiConfig.LoggingTimestampFormat != null)
-                        console.TimestampFormat = _apiConfig.LoggingTimestampFormat;
-                });
-                configure.AddDebug();
+                builder.ClearProviders();
+
+                var logConfig = _config.GetSection(ApiConfigKeys.Logging);
+                builder.AddConfiguration(logConfig);
+
+                var providerString = _config[ApiConfigKeys.LoggingProvider]
+                    ?? string.Empty;
+                var providerTokens = providerString.Split(
+                    ",", StringSplitOptions.RemoveEmptyEntries);
+                var providerList = providerTokens.Select(
+                    provider => provider.ToLowerInvariant().Trim());
+
+                if (providerList.Contains(ApiLogProvider.Console.GetDescription()))
+                    builder.AddConsole(opts =>
+                    {
+                        if (options != null)
+                        {
+                            opts.IncludeScopes = options.IncludeScopes;
+                            opts.DisableColors = options.DisableColors;
+                            opts.Format = options.Format;
+                            opts.LogToStandardErrorThreshold = options.LogToStandardErrorThreshold;
+                            opts.TimestampFormat = options.TimestampFormat;
+                        }
+                    });
+
+                if (providerList.Contains(ApiLogProvider.Debug.GetDescription()))
+                    builder.AddDebug();
+                if (providerList.Contains(ApiLogProvider.EventSource.GetDescription()))
+                    builder.AddEventSourceLogger();
             });
 
             _invokedMethods.Add(nameof(AddLogging));
@@ -136,46 +137,119 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
-        /// Checks if a SqlServer DbContext should be added to the
-        /// current service collection. It is added only if the
-        /// SqlServerConnectionStringKey is defined in the config
-        /// file and the service type is ApiServiceType.ServceEF.
+        /// Adds a SqlServer DbContext to the current service collection
+        /// only if the the SqlServer connection string or the AspNetIdentity
+        /// connection string is defined in the configuration and the service
+        /// type is ApiServiceType.ServiceEF.
         /// </summary>
+        /// <exception cref="InvalidOperationException">If this method
+        /// was already called.</exception>
+        internal ApiBuilder<TLoggerCategory, TDbContext> AddSqlServer()
+        {
+            if (IsInvoked(nameof(AddSqlServer)))
+                throw new InvalidOperationException(
+                    ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(AddSqlServer))
+                );
+
+            if (ServiceType == ApiServiceType.ServiceEF)
+            {
+                var sqlServerConnectionString = _config.GetConnectionString(
+                    ApiConfigKeys.SqlServerConnectionStringName);
+                var aspNetIdentityConnectionString = _config.GetConnectionString(
+                    ApiConfigKeys.AspNetIdentityConnectionStringName);
+                var connectionString = !string.IsNullOrEmpty(sqlServerConnectionString)
+                    ? sqlServerConnectionString
+                    : aspNetIdentityConnectionString;
+
+                if (!string.IsNullOrEmpty(connectionString))
+                    _services.AddDbContext<TDbContext>(
+                        opts => opts.UseSqlServer(connectionString)
+                    );
+            }
+
+            _invokedMethods.Add(nameof(AddSqlServer));
+            return this;
+        }
+
+        /// <summary>
+        /// Adds AspNetIdentity services to the current service collection
+        /// only if the AspNetIdentity connection string is defined in the
+        /// configuration and the service type is ApiServiceType.ServiceEF.
+        /// </summary>
+        /// <param name="options">Represents all the options you can use to
+        /// configure the identity system.</param>
         /// <returns>Reference to the current ApiBuilder.</returns>
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
-        /// <exception cref="ConfigException">If the connection
-        /// string name is not found either in the environment variables
-        /// or in the config file.</exception>
-        internal ApiBuilder<TLoggerCategory, TDbContext> CheckSqlServer()
+        public ApiBuilder<TLoggerCategory, TDbContext> AddIdentity(
+            IdentityOptions options = null)
         {
-            if (IsInvoked(nameof(CheckSqlServer)))
+            if (IsInvoked(nameof(AddIdentity)))
                 throw new InvalidOperationException(
-                    ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(CheckSqlServer))
+                    ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(AddIdentity))
                 );
-            if (_apiConfig.SqlServerConnectionStringKey == null)
-                return this;
-            if (ServiceType != ApiServiceType.ServiceEF)
-                return this;
 
-            var connectionStringSection = _config.GetSection(
-                _apiConfig.SqlServerConnectionStringKey);
+            var aspNetIdentityConnectionString = _config.GetConnectionString(
+                ApiConfigKeys.AspNetIdentityConnectionStringName);
+            var shouldAddIdenity = ServiceType == ApiServiceType.ServiceEF
+                && !string.IsNullOrEmpty(aspNetIdentityConnectionString);
 
-            if (connectionStringSection.Exists())
+            if (shouldAddIdenity)
             {
-                var connectionStringName = connectionStringSection.Value;
-                var connectionStringValue = _config[connectionStringName];
-
-                if (string.IsNullOrEmpty(connectionStringValue))
-                    throw new ConfigException(
-                        UtilResources.Get("Common.EnvironmentVariableNotFound", connectionStringValue));
-
-                _services.AddDbContext<TDbContext>(
-                    options => options.UseSqlServer(connectionStringValue)
-                );
+                _services.AddDefaultIdentity<IdentityUser>(opts => {
+                    if (options?.ClaimsIdentity != null)
+                    {
+                        opts.ClaimsIdentity.RoleClaimType = options.ClaimsIdentity.RoleClaimType;
+                        opts.ClaimsIdentity.UserNameClaimType = options.ClaimsIdentity.UserNameClaimType;
+                        opts.ClaimsIdentity.UserIdClaimType = options.ClaimsIdentity.UserIdClaimType;
+                        opts.ClaimsIdentity.SecurityStampClaimType = options.ClaimsIdentity.SecurityStampClaimType;
+                    }
+                    if (options?.User != null)
+                    {
+                        opts.User.AllowedUserNameCharacters = options.User.AllowedUserNameCharacters;
+                        opts.User.RequireUniqueEmail = options.User.RequireUniqueEmail;
+                    }
+                    if (options?.Password != null)
+                    {
+                        opts.Password.RequiredLength = options.Password.RequiredLength;
+                        opts.Password.RequiredUniqueChars = options.Password.RequiredUniqueChars;
+                        opts.Password.RequireNonAlphanumeric = options.Password.RequireNonAlphanumeric;
+                        opts.Password.RequireLowercase = options.Password.RequireLowercase;
+                        opts.Password.RequireUppercase = options.Password.RequireUppercase;
+                        opts.Password.RequireDigit = options.Password.RequireDigit;
+                    }
+                    if (options?.Lockout != null)
+                    {
+                        opts.Lockout.AllowedForNewUsers = options.Lockout.AllowedForNewUsers;
+                        opts.Lockout.MaxFailedAccessAttempts = options.Lockout.MaxFailedAccessAttempts;
+                        opts.Lockout.DefaultLockoutTimeSpan = options.Lockout.DefaultLockoutTimeSpan;
+                    }
+                    if (options?.SignIn != null)
+                    {
+                        opts.SignIn.RequireConfirmedEmail = options.SignIn.RequireConfirmedEmail;
+                        opts.SignIn.RequireConfirmedPhoneNumber = options.SignIn.RequireConfirmedPhoneNumber;
+                        opts.SignIn.RequireConfirmedAccount = options.SignIn.RequireConfirmedAccount;
+                    }
+                    if (options?.Tokens != null)
+                    {
+                        opts.Tokens.ProviderMap = options.Tokens.ProviderMap;
+                        opts.Tokens.EmailConfirmationTokenProvider = options.Tokens.EmailConfirmationTokenProvider;
+                        opts.Tokens.PasswordResetTokenProvider = options.Tokens.PasswordResetTokenProvider;
+                        opts.Tokens.ChangeEmailTokenProvider = options.Tokens.ChangeEmailTokenProvider;
+                        opts.Tokens.ChangePhoneNumberTokenProvider = options.Tokens.ChangePhoneNumberTokenProvider;
+                        opts.Tokens.AuthenticatorTokenProvider = options.Tokens.AuthenticatorTokenProvider;
+                        opts.Tokens.AuthenticatorIssuer = options.Tokens.AuthenticatorIssuer;
+                    }
+                    if (options?.Stores != null)
+                    {
+                        opts.Stores.MaxLengthForKeys = options.Stores.MaxLengthForKeys;
+                        opts.Stores.ProtectPersonalData = options.Stores.ProtectPersonalData;
+                    }
+                })
+                .AddEntityFrameworkStores<TDbContext>();
             }
 
-            _invokedMethods.Add(nameof(CheckSqlServer));
+            _invokedMethods.Add(nameof(AddIdentity));
             return this;
         }
 
@@ -214,7 +288,7 @@ namespace Celerik.NetCore.Services
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
         /// <exception cref="ArgumentNullException">Configure is null.
-        ///</exception>
+        /// </exception>
         public ApiBuilder<TLoggerCategory, TDbContext> AddValidators(
             Action configure)
         {
@@ -225,7 +299,7 @@ namespace Celerik.NetCore.Services
 
             if (configure == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(configure))
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(configure))
                 );
 
             _services.Configure<ApiBehaviorOptions>(options =>
@@ -247,9 +321,9 @@ namespace Celerik.NetCore.Services
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
         /// <exception cref="ArgumentNullException">Configure is null.
-        ///</exception>
+        /// </exception>
         public ApiBuilder<TLoggerCategory, TDbContext> AddBusinesServices(
-            Action configure)
+            Action<IConfiguration> configure)
         {
             if (IsInvoked(nameof(AddBusinesServices)))
                 throw new InvalidOperationException(
@@ -258,27 +332,28 @@ namespace Celerik.NetCore.Services
 
             if (configure == null)
                 throw new ArgumentNullException(
-                    UtilResources.Get("Common.ArgumentCanNotBeNull", nameof(configure))
+                    UtilResources.Get("ArgumentCanNotBeNull", nameof(configure))
                 );
 
             switch (ServiceType)
             {
-                case ApiServiceType.ServiceEF:
-                    _services.AddTransient<ApiServiceArgsEF<TLoggerCategory, TDbContext>>();
-                    break;
+                case ApiServiceType.ServiceHttp:
                 case ApiServiceType.ServiceMock:
                     _services.AddTransient<ApiServiceArgs<TLoggerCategory>>();
                     break;
+                case ApiServiceType.ServiceEF:
+                    _services.AddTransient<ApiServiceArgsEF<TLoggerCategory, TDbContext>>();
+                    break;
             }
 
-            configure.Invoke();
+            configure.Invoke(_config);
 
             _invokedMethods.Add(nameof(AddBusinesServices));
             return this;
         }
 
         /// <summary>
-        /// Indicates wheather the passed-in method name was already
+        /// Indicates whether the passed-in method name was already
         /// executed in this builder.
         /// </summary>
         /// <param name="methodName">The name of the method.</param>

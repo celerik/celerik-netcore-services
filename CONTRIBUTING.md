@@ -7,7 +7,7 @@ The document covers the process for contributing to the code that is hosted on t
 - [DOs and DON'Ts](#dos-and-donts)
 - [Process for contributing](#process-for-contributing)
 
-This repository provides a codebaseline for .NET Core service-oriented project and abstractions for common services like Log, Security, MasterData, Settings. A built-in PayPal service is included as well.
+This repository provides a code baseline for .NET Core service-oriented projects including configuration, standard service builder, common enumerations, common exceptions, a standar response model, pagination, resources, base service classes and utilities.
 
 Issues and tasks for this repository are tracked in [celerik-netcore-services/projects](https://github.com/celerik/celerik-netcore-services/projects).
 

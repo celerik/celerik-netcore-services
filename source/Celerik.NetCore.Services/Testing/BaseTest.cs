@@ -36,16 +36,13 @@ namespace Celerik.NetCore.Services
             _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
 
             var services = new ServiceCollection();
-            var stringocalizerFactory = CreateStringLocalizerFactory();
             using var config = new DummyConfiguration();
 
             services.AddSingleton<ILogger>(NullLogger.Instance);
             services.AddSingleton<IConfiguration>(config);
-            services.AddSingleton(stringocalizerFactory);
             services.AddTransient<IHttpContextAccessor>(svcProvider => _httpContextAccesor);
 
             InitializeServiceProvier(services);
-            UtilResources.Initialize(stringocalizerFactory);
         }
 
         /// <summary>
@@ -87,23 +84,6 @@ namespace Celerik.NetCore.Services
         /// <param name="userClaimValue">The user claim value.</param>
         protected void SetUserClaims(string userClaimKey, object userClaimValue)
             => _httpContextAccesor = new DummyHttpContextAccessor(userClaimKey, userClaimValue);
-
-        /// <summary>
-        /// Creates an instance of the IStringLocalizerFactory.
-        /// </summary>
-        /// <returns>Instance of the IStringLocalizerFactory.</returns>
-        private IStringLocalizerFactory CreateStringLocalizerFactory()
-        {
-            var stringLocalizerFactory = new ResourceManagerStringLocalizerFactory(
-                Options.Create(new LocalizationOptions
-                {
-                    ResourcesPath = "Resources"
-                }),
-                NullLoggerFactory.Instance
-            );
-
-            return stringLocalizerFactory;
-        }
 
         /// <summary>
         /// Initializes the service provider.

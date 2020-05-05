@@ -8,10 +8,10 @@ namespace Celerik.NetCore.Services.Test
         [TestMethod]
         public void Get()
         {
-            var name = "The database was deleted!";
-            var resource = ServiceResources.Get(name);
+            var name = "ApiBuilder.MethodAlreadyCalled";
+            var resource = ServiceResources.Get(name, nameof(Get));
 
-            Assert.AreEqual(name, resource);
+            Assert.AreEqual("This method was already called: 'Get'", resource);
         }
 
         [TestMethod]

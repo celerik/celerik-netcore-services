@@ -73,11 +73,8 @@ namespace Celerik.NetCore.Services
                     ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(AddLocalization))
                 );
 
-            _services.AddLocalization(opts =>
-            {
-                if (options != null)
-                    opts.ResourcesPath = options.ResourcesPath;
-            });
+            var jsonStringLocalizer = new JsonStringLocalizerFactory(options.ResourcesPath);
+            _services.AddSingleton<IStringLocalizerFactory>(jsonStringLocalizer);
 
             _invokedMethods.Add(nameof(AddLocalization));
             return this;

@@ -1,0 +1,20 @@
+﻿{
+  "ApiBuilder.MethodAlreadyCalled": "Este método ya fue llamado: '{0}'",
+  "ApiService.Dispose.Disposing": "'{0}' liberando recursos",
+  "ApiService.EndLog.End": "'{0}' Finaliza",
+  "ApiService.EndLog.TotalSeconds": "SegundosTotales: {0}",
+  "ApiService.StartLog.Start": "'{0}' Inicia",
+  "Common.BadRequestCallingService": "Solicitud incorrecta llamando servicio: '{0}'. Detalle: '{1}'",
+  "Common.ErrorCallingService": "Error llamando servicio: '{0}'. Código de estado: '{1}'. Detalle: '{2}'",
+  "Common.FactoryException": "No se puede crear una instancia de: '{0}'",
+  "Common.IdDoesntExist": "'{0}' con valor '{1}' no existe",
+  "Common.InjectException": "No se puede inyectar una instancia de: '{0}'. '{1}' es inválido: '{2}'",
+  "Common.NoRecordsFound": "No se encontraron registros",
+  "Common.RecordDeletedOk": "¡El registro se eliminó exitosamente!",
+  "Common.RecordInsertedOk": "¡El registro se insertó exitosamente!",
+  "Common.RecordUpdatedOk": "¡El registro se actualizó exitosamente!",
+  "ConfigKeyNotFound": "Llave de configuración no encontrada: '{0}'",
+  "ConfigValueInvalid": "El valor de configuración '{0}' es inválido: '{1}'",
+  "SortDirectionInvalid": "'Sort Direction' debe ser 'asc' o 'desc'",
+  "SortKeyInvalid": "'Sort Key' debe ser uno de los siguientes valores: '{0}'"
+}

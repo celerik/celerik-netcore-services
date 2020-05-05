@@ -1,0 +1,20 @@
+﻿{
+  "ApiBuilder.MethodAlreadyCalled": "This method was already called: '{0}'",
+  "ApiService.Dispose.Disposing": "'{0}' disposing resources",
+  "ApiService.EndLog.End": "'{0}' End",
+  "ApiService.EndLog.TotalSeconds": "TotalSeconds: {0}",
+  "ApiService.StartLog.Start": "'{0}' Start",
+  "Common.BadRequestCallingService": "Bad request calling service: '{0}'. Details: '{1}'",
+  "Common.ErrorCallingService": "Error calling service: '{0}'. StatusCode: '{1}'. Details: '{2}'",
+  "Common.FactoryException": "Unable to create an instance of: '{0}'",
+  "Common.IdDoesntExist": "'{0}' with value '{1}' does not exist",
+  "Common.InjectException": "Unable to inject an instance of: '{0}'",
+  "Common.NoRecordsFound": "No records found",
+  "Common.RecordDeletedOk": "The record was successfully deleted!",
+  "Common.RecordInsertedOk": "The record was successfully inserted!",
+  "Common.RecordUpdatedOk": "The record was successfully updated!",
+  "ConfigKeyNotFound": "Configuration key not found: '{0}'",
+  "ConfigValueInvalid": "Configuration key: '{0}' has an invalid value: '{1}'",
+  "SortDirectionInvalid": "'Sort Direction' must be 'asc' or 'desc'",
+  "SortKeyInvalid": "'Sort Key' must be one of following values: '{0}'"
+}

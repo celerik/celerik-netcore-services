@@ -312,10 +312,7 @@ namespace Celerik.NetCore.Services
                 response.MessageType = ApiMessageType.Error;
 
                 if (response.Message == null)
-                {
-                    response.Message = null;
-                    response.Message = response.StatusCode.ToString();
-                }
+                    response.Message = LocalizeString(response.StatusCode.ToString());
             }
         }
         /*

@@ -10,9 +10,11 @@ namespace Celerik.NetCore.Services
     /// </summary>
     /// <typeparam name="TLoggerCategory">The type who's name is used
     /// for the logger category name.</typeparam>
+    /// <typeparam name="TResources">The type used to localize string
+    /// resources.</typeparam>
     /// <typeparam name="TDbContext">The type of DbContext.</typeparam>
-    public abstract class ApiServiceEF<TLoggerCategory, TDbContext>
-        : ApiService<TLoggerCategory>
+    public abstract class ApiServiceEF<TLoggerCategory, TResources, TDbContext>
+        : ApiService<TLoggerCategory, TResources>
             where TDbContext : DbContext
     {
         /// <summary>

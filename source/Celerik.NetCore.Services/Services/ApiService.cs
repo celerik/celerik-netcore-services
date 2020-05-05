@@ -7,6 +7,7 @@ using FluentValidation;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 
 namespace Celerik.NetCore.Services
@@ -16,7 +17,9 @@ namespace Celerik.NetCore.Services
     /// </summary>
     /// <typeparam name="TLoggerCategory">The type who's name is used
     /// for the logger category name.</typeparam>
-    public abstract class ApiService<TLoggerCategory> : IDisposable
+    /// <typeparam name="TResources">The type used to localize string
+    /// resources.</typeparam>
+    public abstract class ApiService<TLoggerCategory, TResources> : IDisposable
     {
         /// <summary>
         /// Indicates wheter Dispose() was already called.
@@ -32,6 +35,11 @@ namespace Celerik.NetCore.Services
         /// Reference to te current IHttpContextAccessor instance.
         /// </summary>
         private IHttpContextAccessor _httpContextAccessor;
+
+        /// <summary>
+        /// Reference to the current IStringLocalizer instance.
+        /// </summary>
+        private IStringLocalizer _stringLocalizer;
 
         /// <summary>
         /// Initializes a new instance of the class.
@@ -54,6 +62,7 @@ namespace Celerik.NetCore.Services
             Mapper = args.Mapper;
 
             UtilResources.Initialize(args.StringLocalizerFactory);
+            _stringLocalizer = UtilResources.Factory.Create(typeof(TResources));
         }
 
         /// <summary>
@@ -102,7 +111,7 @@ namespace Celerik.NetCore.Services
                 return;
 
             var typeName = GetType().Name;
-            Logger.LogDebug(ServiceResources.Get("ApiService.Dispose.Disposing"), typeName);
+            Logger.LogDebug(LocalizeString("ApiService.Dispose.Disposing", typeName));
 
             if (disposing)
             {
@@ -125,7 +134,7 @@ namespace Celerik.NetCore.Services
         {
             _stopWatch.Start();
             var callerMethodName = new StackTrace(1).GetMethodName();
-            Logger.LogDebug(ServiceResources.Get("ApiService.StartLog.Start"), callerMethodName);
+            Logger.LogDebug(LocalizeString("ApiService.StartLog.Start", callerMethodName));
         }
 
         /// <summary>
@@ -139,12 +148,32 @@ namespace Celerik.NetCore.Services
             var callerMethodName = new StackTrace(1).GetMethodName();
             var totalSeconds = _stopWatch.Elapsed.TotalSeconds;
 
-            Logger.LogDebug(ServiceResources.Get("ApiService.EndLog.End"), callerMethodName);
-            Logger.LogDebug(ServiceResources.Get("ApiService.EndLog.TotalSeconds"), totalSeconds);
+            Logger.LogDebug(LocalizeString("ApiService.EndLog.End", callerMethodName));
+            Logger.LogDebug(LocalizeString("ApiService.EndLog.TotalSeconds", totalSeconds));
 
             if (!string.IsNullOrEmpty(message))
-                Logger.LogDebug(message);
+                Logger.LogDebug(LocalizeString(message));
         }
+
+        /// <summary>
+        /// Localizes the string resource with the given name.
+        /// </summary>
+        /// <param name="name">The name of the string resource.</param>
+        /// <returns>Localized string resource.</returns>
+        protected string LocalizeString(string name)
+            => _stringLocalizer?[name].Value
+                ?? ServiceResources.Get(name);
+
+        /// <summary>
+        /// Localizes the string resource with the given name and formatted with
+        /// the supplied arguments.
+        /// </summary>
+        /// <param name="name">The name of the string resource.</param>
+        /// <param name="arguments">The values to format the string with.</param>
+        /// <returns>The formatted string resource.</returns>
+        public string LocalizeString(string name, params object[] arguments)
+            => _stringLocalizer?[name, arguments].Value
+                ?? ServiceResources.Get(name, arguments);
 
         /// <summary>
         /// Validates the passed-in payload using FluentValidation.
@@ -164,7 +193,7 @@ namespace Celerik.NetCore.Services
             property = null;
 
             if (payload == null)
-                message = UtilResources.Get("ArgumentCanNotBeNull", nameof(payload));
+                message = LocalizeString("ArgumentCanNotBeNull", nameof(payload));
             else
             {
                 var validator = ServiceProvider.GetRequiredService<IValidator<TPayload>>();
@@ -203,7 +232,7 @@ namespace Celerik.NetCore.Services
 
             var apiError = new ApiError<TStatusCode>
             {
-                Message = message,
+                Message = LocalizeString(message),
                 StatusCode = EnumUtility.GetValueFromDescription<TStatusCode>(statusCode)
             };
 
@@ -224,7 +253,7 @@ namespace Celerik.NetCore.Services
         {
             var apiError = new ApiError<TStatusCode>
             {
-                Message = statusCode.ToString(),
+                Message = LocalizeString(statusCode.ToString()),
                 StatusCode = statusCode
             };
 
@@ -249,7 +278,7 @@ namespace Celerik.NetCore.Services
             {
                 Data = Mapper.Map<TData>(data),
                 Success = true,
-                Message = statusCode.ToString(),
+                Message = LocalizeString(statusCode.ToString()),
                 MessageType = ApiMessageType.Success,
                 StatusCode = statusCode
             };
@@ -273,7 +302,7 @@ namespace Celerik.NetCore.Services
             if (response?.Data != null)
             {
                 response.Success = true;
-                response.Message = successMessageCode.ToString();
+                response.Message = LocalizeString(successMessageCode.ToString());
                 response.MessageType = ApiMessageType.Success;
                 response.StatusCode = successMessageCode;
             }

@@ -188,12 +188,12 @@ namespace Celerik.NetCore.Services
                 var connectionString = _config.GetConnectionString(
                     ApiConfigKeys.CosmosDbConnectionStringName);
 
-                var cosmosConectionString = new CosmosDBConnectionString(connectionString);
+                var cosmosConnectionString = new CosmosDBConnectionString(connectionString);
                 var databaseName = _config.GetValue<string>(ApiConfigKeys.CosmosDbDatabaseName);
 
                 if (!string.IsNullOrEmpty(connectionString))
                     _services.AddDbContext<TDbContext>(
-                        opts => opts.UseCosmos(cosmosConectionString.ServiceEndpoint, cosmosConectionString.AuthKey, databaseName)
+                        opts => opts.UseCosmos(cosmosConnectionString.ServiceEndpoint, cosmosConnectionString.AuthKey, databaseName)
                     );
             }
 

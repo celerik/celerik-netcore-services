@@ -29,5 +29,15 @@
         /// Name of the AspNetIdentity connection string.
         /// </summary>
         public const string AspNetIdentityConnectionStringName = "AspNetIdentity";
+
+        /// <summary>
+        /// Name of the CosmosDb connection string.
+        /// </summary>
+        public const string CosmosDbConnectionStringName = "CosmosDb";
+
+        /// <summary>
+        /// Name of the CosmosDb database.
+        /// </summary>
+        public const string CosmosDbDatabaseName = "CosmosDbName";
     }
 }

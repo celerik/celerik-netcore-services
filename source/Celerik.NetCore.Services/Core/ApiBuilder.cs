@@ -169,6 +169,39 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
+        /// Adds a Cosmos DbContext to the current service
+        /// collection only if the the Cosmos connection string
+        /// is defined in the configuration and the service
+        /// type is ApiServiceType.ServiceEF.
+        /// </summary>
+        /// <exception cref="InvalidOperationException">If this method
+        /// was already called.</exception>
+        internal ApiBuilder<TLoggerCategory, TDbContext> AddCosmosDb()
+        {
+            if (IsInvoked(nameof(AddCosmosDb)))
+                throw new InvalidOperationException(
+                    ServiceResources.Get("ApiBuilder.MethodAlreadyCalled", nameof(AddCosmosDb))
+                );
+
+            if (ServiceType == ApiServiceType.ServiceEF)
+            {
+                var connectionString = _config.GetConnectionString(
+                    ApiConfigKeys.CosmosDbConnectionStringName);
+
+                var cosmosConnectionString = new CosmosDBConnectionString(connectionString);
+                var databaseName = _config.GetValue<string>(ApiConfigKeys.CosmosDbDatabaseName);
+
+                if (!string.IsNullOrEmpty(connectionString))
+                    _services.AddDbContext<TDbContext>(
+                        opts => opts.UseCosmos(cosmosConnectionString.ServiceEndpoint, cosmosConnectionString.AuthKey, databaseName)
+                    );
+            }
+
+            _invokedMethods.Add(nameof(AddCosmosDb));
+            return this;
+        }
+
+        /// <summary>
         /// Adds AspNetIdentity services to the current service collection
         /// only if the AspNetIdentity connection string is defined in the
         /// configuration and the service type is ApiServiceType.ServiceEF.

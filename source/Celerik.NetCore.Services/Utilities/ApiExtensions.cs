@@ -39,7 +39,8 @@ namespace Celerik.NetCore.Services
                 .AddLocalization(apiConfig.LocalizationOptions)
                 .AddLogging(apiConfig.ConsoleLoggerOptions)
                 .AddSqlServer()
-                .AddIdentity(apiConfig.IdentityOptions);
+                .AddIdentity(apiConfig.IdentityOptions)
+                .AddCosmosDb();
         }
 
         /// <summary>

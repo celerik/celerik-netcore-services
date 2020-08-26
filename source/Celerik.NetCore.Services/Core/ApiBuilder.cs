@@ -169,9 +169,9 @@ namespace Celerik.NetCore.Services
         }
 
         /// <summary>
-        /// Adds a Cosmos DbContext to the current service collection
-        /// only if the the Cosmos connection string is
-        /// defined in the configuration and the service
+        /// Adds a Cosmos DbContext to the current service
+        /// collection only if the the Cosmos connection string
+        /// is defined in the configuration and the service
         /// type is ApiServiceType.ServiceEF.
         /// </summary>
         /// <exception cref="InvalidOperationException">If this method

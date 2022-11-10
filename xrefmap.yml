@@ -1,0 +1,1747 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Celerik.NetCore.Services
+  name: Celerik.NetCore.Services
+  href: api/Celerik.NetCore.Services.html
+  commentId: N:Celerik.NetCore.Services
+  fullName: Celerik.NetCore.Services
+  nameWithType: Celerik.NetCore.Services
+- uid: Celerik.NetCore.Services.ApiBuilder`2
+  name: ApiBuilder<TLoggerCategory, TDbContext>
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html
+  commentId: T:Celerik.NetCore.Services.ApiBuilder`2
+  name.vb: ApiBuilder(Of TLoggerCategory, TDbContext)
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext)
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext)
+- uid: Celerik.NetCore.Services.ApiBuilder`2.#ctor(IServiceCollection,IConfiguration)
+  name: ApiBuilder(IServiceCollection, IConfiguration)
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2__ctor_IServiceCollection_IConfiguration_
+  commentId: M:Celerik.NetCore.Services.ApiBuilder`2.#ctor(IServiceCollection,IConfiguration)
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.ApiBuilder(IServiceCollection, IConfiguration)
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).ApiBuilder(IServiceCollection, IConfiguration)
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.ApiBuilder(IServiceCollection, IConfiguration)
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).ApiBuilder(IServiceCollection, IConfiguration)
+- uid: Celerik.NetCore.Services.ApiBuilder`2.#ctor*
+  name: ApiBuilder
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.ApiBuilder
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).ApiBuilder
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.ApiBuilder
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).ApiBuilder
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddAutomapper(Action{IMapperConfigurationExpression})
+  name: AddAutomapper(Action<IMapperConfigurationExpression>)
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddAutomapper_Action_IMapperConfigurationExpression__
+  commentId: M:Celerik.NetCore.Services.ApiBuilder`2.AddAutomapper(Action{IMapperConfigurationExpression})
+  name.vb: AddAutomapper(Action(Of IMapperConfigurationExpression))
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddAutomapper(Action<IMapperConfigurationExpression>)
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddAutomapper(Action(Of IMapperConfigurationExpression))
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddAutomapper(Action<IMapperConfigurationExpression>)
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddAutomapper(Action(Of IMapperConfigurationExpression))
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddAutomapper*
+  name: AddAutomapper
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddAutomapper_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.AddAutomapper
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddAutomapper
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddAutomapper
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddAutomapper
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddAutomapper
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddBusinesServices(Action{IConfiguration})
+  name: AddBusinesServices(Action<IConfiguration>)
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddBusinesServices_Action_IConfiguration__
+  commentId: M:Celerik.NetCore.Services.ApiBuilder`2.AddBusinesServices(Action{IConfiguration})
+  name.vb: AddBusinesServices(Action(Of IConfiguration))
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddBusinesServices(Action<IConfiguration>)
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddBusinesServices(Action(Of IConfiguration))
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddBusinesServices(Action<IConfiguration>)
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddBusinesServices(Action(Of IConfiguration))
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddBusinesServices*
+  name: AddBusinesServices
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddBusinesServices_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.AddBusinesServices
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddBusinesServices
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddBusinesServices
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddBusinesServices
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddBusinesServices
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddIdentity(IdentityOptions)
+  name: AddIdentity(IdentityOptions)
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddIdentity_IdentityOptions_
+  commentId: M:Celerik.NetCore.Services.ApiBuilder`2.AddIdentity(IdentityOptions)
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddIdentity(IdentityOptions)
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddIdentity(IdentityOptions)
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddIdentity(IdentityOptions)
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddIdentity(IdentityOptions)
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddIdentity*
+  name: AddIdentity
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddIdentity_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.AddIdentity
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddIdentity
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddIdentity
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddIdentity
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddIdentity
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddValidators(Action)
+  name: AddValidators(Action)
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddValidators_Action_
+  commentId: M:Celerik.NetCore.Services.ApiBuilder`2.AddValidators(Action)
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddValidators(Action)
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddValidators(Action)
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddValidators(Action)
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddValidators(Action)
+- uid: Celerik.NetCore.Services.ApiBuilder`2.AddValidators*
+  name: AddValidators
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_AddValidators_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.AddValidators
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.AddValidators
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).AddValidators
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.AddValidators
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).AddValidators
+- uid: Celerik.NetCore.Services.ApiBuilder`2.ServiceType
+  name: ServiceType
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_ServiceType
+  commentId: P:Celerik.NetCore.Services.ApiBuilder`2.ServiceType
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.ServiceType
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).ServiceType
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.ServiceType
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).ServiceType
+- uid: Celerik.NetCore.Services.ApiBuilder`2.ServiceType*
+  name: ServiceType
+  href: api/Celerik.NetCore.Services.ApiBuilder-2.html#Celerik_NetCore_Services_ApiBuilder_2_ServiceType_
+  commentId: Overload:Celerik.NetCore.Services.ApiBuilder`2.ServiceType
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiBuilder<TLoggerCategory, TDbContext>.ServiceType
+  fullName.vb: Celerik.NetCore.Services.ApiBuilder(Of TLoggerCategory, TDbContext).ServiceType
+  nameWithType: ApiBuilder<TLoggerCategory, TDbContext>.ServiceType
+  nameWithType.vb: ApiBuilder(Of TLoggerCategory, TDbContext).ServiceType
+- uid: Celerik.NetCore.Services.ApiChangeAction
+  name: ApiChangeAction
+  href: api/Celerik.NetCore.Services.ApiChangeAction.html
+  commentId: T:Celerik.NetCore.Services.ApiChangeAction
+  fullName: Celerik.NetCore.Services.ApiChangeAction
+  nameWithType: ApiChangeAction
+- uid: Celerik.NetCore.Services.ApiChangeAction.Delete
+  name: Delete
+  href: api/Celerik.NetCore.Services.ApiChangeAction.html#Celerik_NetCore_Services_ApiChangeAction_Delete
+  commentId: F:Celerik.NetCore.Services.ApiChangeAction.Delete
+  fullName: Celerik.NetCore.Services.ApiChangeAction.Delete
+  nameWithType: ApiChangeAction.Delete
+- uid: Celerik.NetCore.Services.ApiChangeAction.Insert
+  name: Insert
+  href: api/Celerik.NetCore.Services.ApiChangeAction.html#Celerik_NetCore_Services_ApiChangeAction_Insert
+  commentId: F:Celerik.NetCore.Services.ApiChangeAction.Insert
+  fullName: Celerik.NetCore.Services.ApiChangeAction.Insert
+  nameWithType: ApiChangeAction.Insert
+- uid: Celerik.NetCore.Services.ApiChangeAction.Update
+  name: Update
+  href: api/Celerik.NetCore.Services.ApiChangeAction.html#Celerik_NetCore_Services_ApiChangeAction_Update
+  commentId: F:Celerik.NetCore.Services.ApiChangeAction.Update
+  fullName: Celerik.NetCore.Services.ApiChangeAction.Update
+  nameWithType: ApiChangeAction.Update
+- uid: Celerik.NetCore.Services.ApiConfig
+  name: ApiConfig
+  href: api/Celerik.NetCore.Services.ApiConfig.html
+  commentId: T:Celerik.NetCore.Services.ApiConfig
+  fullName: Celerik.NetCore.Services.ApiConfig
+  nameWithType: ApiConfig
+- uid: Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions
+  name: ConsoleLoggerOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_ConsoleLoggerOptions
+  commentId: P:Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions
+  fullName: Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions
+  nameWithType: ApiConfig.ConsoleLoggerOptions
+- uid: Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions*
+  name: ConsoleLoggerOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_ConsoleLoggerOptions_
+  commentId: Overload:Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiConfig.ConsoleLoggerOptions
+  nameWithType: ApiConfig.ConsoleLoggerOptions
+- uid: Celerik.NetCore.Services.ApiConfig.IdentityOptions
+  name: IdentityOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_IdentityOptions
+  commentId: P:Celerik.NetCore.Services.ApiConfig.IdentityOptions
+  fullName: Celerik.NetCore.Services.ApiConfig.IdentityOptions
+  nameWithType: ApiConfig.IdentityOptions
+- uid: Celerik.NetCore.Services.ApiConfig.IdentityOptions*
+  name: IdentityOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_IdentityOptions_
+  commentId: Overload:Celerik.NetCore.Services.ApiConfig.IdentityOptions
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiConfig.IdentityOptions
+  nameWithType: ApiConfig.IdentityOptions
+- uid: Celerik.NetCore.Services.ApiConfig.LocalizationOptions
+  name: LocalizationOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_LocalizationOptions
+  commentId: P:Celerik.NetCore.Services.ApiConfig.LocalizationOptions
+  fullName: Celerik.NetCore.Services.ApiConfig.LocalizationOptions
+  nameWithType: ApiConfig.LocalizationOptions
+- uid: Celerik.NetCore.Services.ApiConfig.LocalizationOptions*
+  name: LocalizationOptions
+  href: api/Celerik.NetCore.Services.ApiConfig.html#Celerik_NetCore_Services_ApiConfig_LocalizationOptions_
+  commentId: Overload:Celerik.NetCore.Services.ApiConfig.LocalizationOptions
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiConfig.LocalizationOptions
+  nameWithType: ApiConfig.LocalizationOptions
+- uid: Celerik.NetCore.Services.ApiConfigKeys
+  name: ApiConfigKeys
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html
+  commentId: T:Celerik.NetCore.Services.ApiConfigKeys
+  fullName: Celerik.NetCore.Services.ApiConfigKeys
+  nameWithType: ApiConfigKeys
+- uid: Celerik.NetCore.Services.ApiConfigKeys.AspNetIdentityConnectionStringName
+  name: AspNetIdentityConnectionStringName
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_AspNetIdentityConnectionStringName
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.AspNetIdentityConnectionStringName
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.AspNetIdentityConnectionStringName
+  nameWithType: ApiConfigKeys.AspNetIdentityConnectionStringName
+- uid: Celerik.NetCore.Services.ApiConfigKeys.CosmosDbConnectionStringName
+  name: CosmosDbConnectionStringName
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_CosmosDbConnectionStringName
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.CosmosDbConnectionStringName
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.CosmosDbConnectionStringName
+  nameWithType: ApiConfigKeys.CosmosDbConnectionStringName
+- uid: Celerik.NetCore.Services.ApiConfigKeys.CosmosDbDatabaseName
+  name: CosmosDbDatabaseName
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_CosmosDbDatabaseName
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.CosmosDbDatabaseName
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.CosmosDbDatabaseName
+  nameWithType: ApiConfigKeys.CosmosDbDatabaseName
+- uid: Celerik.NetCore.Services.ApiConfigKeys.Logging
+  name: Logging
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_Logging
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.Logging
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.Logging
+  nameWithType: ApiConfigKeys.Logging
+- uid: Celerik.NetCore.Services.ApiConfigKeys.LoggingProvider
+  name: LoggingProvider
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_LoggingProvider
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.LoggingProvider
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.LoggingProvider
+  nameWithType: ApiConfigKeys.LoggingProvider
+- uid: Celerik.NetCore.Services.ApiConfigKeys.ServiceType
+  name: ServiceType
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_ServiceType
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.ServiceType
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.ServiceType
+  nameWithType: ApiConfigKeys.ServiceType
+- uid: Celerik.NetCore.Services.ApiConfigKeys.SqlServerConnectionStringName
+  name: SqlServerConnectionStringName
+  href: api/Celerik.NetCore.Services.ApiConfigKeys.html#Celerik_NetCore_Services_ApiConfigKeys_SqlServerConnectionStringName
+  commentId: F:Celerik.NetCore.Services.ApiConfigKeys.SqlServerConnectionStringName
+  fullName: Celerik.NetCore.Services.ApiConfigKeys.SqlServerConnectionStringName
+  nameWithType: ApiConfigKeys.SqlServerConnectionStringName
+- uid: Celerik.NetCore.Services.ApiError`1
+  name: ApiError<TStatusCode>
+  href: api/Celerik.NetCore.Services.ApiError-1.html
+  commentId: T:Celerik.NetCore.Services.ApiError`1
+  name.vb: ApiError(Of TStatusCode)
+  fullName: Celerik.NetCore.Services.ApiError<TStatusCode>
+  fullName.vb: Celerik.NetCore.Services.ApiError(Of TStatusCode)
+  nameWithType: ApiError<TStatusCode>
+  nameWithType.vb: ApiError(Of TStatusCode)
+- uid: Celerik.NetCore.Services.ApiError`1.Message
+  name: Message
+  href: api/Celerik.NetCore.Services.ApiError-1.html#Celerik_NetCore_Services_ApiError_1_Message
+  commentId: P:Celerik.NetCore.Services.ApiError`1.Message
+  fullName: Celerik.NetCore.Services.ApiError<TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.Services.ApiError(Of TStatusCode).Message
+  nameWithType: ApiError<TStatusCode>.Message
+  nameWithType.vb: ApiError(Of TStatusCode).Message
+- uid: Celerik.NetCore.Services.ApiError`1.Message*
+  name: Message
+  href: api/Celerik.NetCore.Services.ApiError-1.html#Celerik_NetCore_Services_ApiError_1_Message_
+  commentId: Overload:Celerik.NetCore.Services.ApiError`1.Message
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiError<TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.Services.ApiError(Of TStatusCode).Message
+  nameWithType: ApiError<TStatusCode>.Message
+  nameWithType.vb: ApiError(Of TStatusCode).Message
+- uid: Celerik.NetCore.Services.ApiError`1.StatusCode
+  name: StatusCode
+  href: api/Celerik.NetCore.Services.ApiError-1.html#Celerik_NetCore_Services_ApiError_1_StatusCode
+  commentId: P:Celerik.NetCore.Services.ApiError`1.StatusCode
+  fullName: Celerik.NetCore.Services.ApiError<TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.Services.ApiError(Of TStatusCode).StatusCode
+  nameWithType: ApiError<TStatusCode>.StatusCode
+  nameWithType.vb: ApiError(Of TStatusCode).StatusCode
+- uid: Celerik.NetCore.Services.ApiError`1.StatusCode*
+  name: StatusCode
+  href: api/Celerik.NetCore.Services.ApiError-1.html#Celerik_NetCore_Services_ApiError_1_StatusCode_
+  commentId: Overload:Celerik.NetCore.Services.ApiError`1.StatusCode
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiError<TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.Services.ApiError(Of TStatusCode).StatusCode
+  nameWithType: ApiError<TStatusCode>.StatusCode
+  nameWithType.vb: ApiError(Of TStatusCode).StatusCode
+- uid: Celerik.NetCore.Services.ApiExtensions
+  name: ApiExtensions
+  href: api/Celerik.NetCore.Services.ApiExtensions.html
+  commentId: T:Celerik.NetCore.Services.ApiExtensions
+  fullName: Celerik.NetCore.Services.ApiExtensions
+  nameWithType: ApiExtensions
+- uid: Celerik.NetCore.Services.ApiExtensions.AddCoreServices*
+  name: AddCoreServices
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_AddCoreServices_
+  commentId: Overload:Celerik.NetCore.Services.ApiExtensions.AddCoreServices
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiExtensions.AddCoreServices
+  nameWithType: ApiExtensions.AddCoreServices
+- uid: Celerik.NetCore.Services.ApiExtensions.AddCoreServices``1(IServiceCollection,IConfiguration,Celerik.NetCore.Services.ApiConfig)
+  name: AddCoreServices<TLoggerCategory>(IServiceCollection, IConfiguration, ApiConfig)
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_AddCoreServices__1_IServiceCollection_IConfiguration_Celerik_NetCore_Services_ApiConfig_
+  commentId: M:Celerik.NetCore.Services.ApiExtensions.AddCoreServices``1(IServiceCollection,IConfiguration,Celerik.NetCore.Services.ApiConfig)
+  name.vb: AddCoreServices(Of TLoggerCategory)(IServiceCollection, IConfiguration, ApiConfig)
+  fullName: Celerik.NetCore.Services.ApiExtensions.AddCoreServices<TLoggerCategory>(IServiceCollection, IConfiguration, Celerik.NetCore.Services.ApiConfig)
+  fullName.vb: Celerik.NetCore.Services.ApiExtensions.AddCoreServices(Of TLoggerCategory)(IServiceCollection, IConfiguration, Celerik.NetCore.Services.ApiConfig)
+  nameWithType: ApiExtensions.AddCoreServices<TLoggerCategory>(IServiceCollection, IConfiguration, ApiConfig)
+  nameWithType.vb: ApiExtensions.AddCoreServices(Of TLoggerCategory)(IServiceCollection, IConfiguration, ApiConfig)
+- uid: Celerik.NetCore.Services.ApiExtensions.AddCoreServices``2(IServiceCollection,IConfiguration,Celerik.NetCore.Services.ApiConfig)
+  name: AddCoreServices<TLoggerCategory, TDbContext>(IServiceCollection, IConfiguration, ApiConfig)
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_AddCoreServices__2_IServiceCollection_IConfiguration_Celerik_NetCore_Services_ApiConfig_
+  commentId: M:Celerik.NetCore.Services.ApiExtensions.AddCoreServices``2(IServiceCollection,IConfiguration,Celerik.NetCore.Services.ApiConfig)
+  name.vb: AddCoreServices(Of TLoggerCategory, TDbContext)(IServiceCollection, IConfiguration, ApiConfig)
+  fullName: Celerik.NetCore.Services.ApiExtensions.AddCoreServices<TLoggerCategory, TDbContext>(IServiceCollection, IConfiguration, Celerik.NetCore.Services.ApiConfig)
+  fullName.vb: Celerik.NetCore.Services.ApiExtensions.AddCoreServices(Of TLoggerCategory, TDbContext)(IServiceCollection, IConfiguration, Celerik.NetCore.Services.ApiConfig)
+  nameWithType: ApiExtensions.AddCoreServices<TLoggerCategory, TDbContext>(IServiceCollection, IConfiguration, ApiConfig)
+  nameWithType.vb: ApiExtensions.AddCoreServices(Of TLoggerCategory, TDbContext)(IServiceCollection, IConfiguration, ApiConfig)
+- uid: Celerik.NetCore.Services.ApiExtensions.AddValidator*
+  name: AddValidator
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_AddValidator_
+  commentId: Overload:Celerik.NetCore.Services.ApiExtensions.AddValidator
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiExtensions.AddValidator
+  nameWithType: ApiExtensions.AddValidator
+- uid: Celerik.NetCore.Services.ApiExtensions.AddValidator``2(IServiceCollection)
+  name: AddValidator<TPayload, TValidator>(IServiceCollection)
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_AddValidator__2_IServiceCollection_
+  commentId: M:Celerik.NetCore.Services.ApiExtensions.AddValidator``2(IServiceCollection)
+  name.vb: AddValidator(Of TPayload, TValidator)(IServiceCollection)
+  fullName: Celerik.NetCore.Services.ApiExtensions.AddValidator<TPayload, TValidator>(IServiceCollection)
+  fullName.vb: Celerik.NetCore.Services.ApiExtensions.AddValidator(Of TPayload, TValidator)(IServiceCollection)
+  nameWithType: ApiExtensions.AddValidator<TPayload, TValidator>(IServiceCollection)
+  nameWithType.vb: ApiExtensions.AddValidator(Of TPayload, TValidator)(IServiceCollection)
+- uid: Celerik.NetCore.Services.ApiExtensions.GetServiceType(IConfiguration)
+  name: GetServiceType(IConfiguration)
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_GetServiceType_IConfiguration_
+  commentId: M:Celerik.NetCore.Services.ApiExtensions.GetServiceType(IConfiguration)
+  fullName: Celerik.NetCore.Services.ApiExtensions.GetServiceType(IConfiguration)
+  nameWithType: ApiExtensions.GetServiceType(IConfiguration)
+- uid: Celerik.NetCore.Services.ApiExtensions.GetServiceType*
+  name: GetServiceType
+  href: api/Celerik.NetCore.Services.ApiExtensions.html#Celerik_NetCore_Services_ApiExtensions_GetServiceType_
+  commentId: Overload:Celerik.NetCore.Services.ApiExtensions.GetServiceType
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiExtensions.GetServiceType
+  nameWithType: ApiExtensions.GetServiceType
+- uid: Celerik.NetCore.Services.ApiLogProvider
+  name: ApiLogProvider
+  href: api/Celerik.NetCore.Services.ApiLogProvider.html
+  commentId: T:Celerik.NetCore.Services.ApiLogProvider
+  fullName: Celerik.NetCore.Services.ApiLogProvider
+  nameWithType: ApiLogProvider
+- uid: Celerik.NetCore.Services.ApiLogProvider.Console
+  name: Console
+  href: api/Celerik.NetCore.Services.ApiLogProvider.html#Celerik_NetCore_Services_ApiLogProvider_Console
+  commentId: F:Celerik.NetCore.Services.ApiLogProvider.Console
+  fullName: Celerik.NetCore.Services.ApiLogProvider.Console
+  nameWithType: ApiLogProvider.Console
+- uid: Celerik.NetCore.Services.ApiLogProvider.Debug
+  name: Debug
+  href: api/Celerik.NetCore.Services.ApiLogProvider.html#Celerik_NetCore_Services_ApiLogProvider_Debug
+  commentId: F:Celerik.NetCore.Services.ApiLogProvider.Debug
+  fullName: Celerik.NetCore.Services.ApiLogProvider.Debug
+  nameWithType: ApiLogProvider.Debug
+- uid: Celerik.NetCore.Services.ApiLogProvider.EventSource
+  name: EventSource
+  href: api/Celerik.NetCore.Services.ApiLogProvider.html#Celerik_NetCore_Services_ApiLogProvider_EventSource
+  commentId: F:Celerik.NetCore.Services.ApiLogProvider.EventSource
+  fullName: Celerik.NetCore.Services.ApiLogProvider.EventSource
+  nameWithType: ApiLogProvider.EventSource
+- uid: Celerik.NetCore.Services.ApiMessageType
+  name: ApiMessageType
+  href: api/Celerik.NetCore.Services.ApiMessageType.html
+  commentId: T:Celerik.NetCore.Services.ApiMessageType
+  fullName: Celerik.NetCore.Services.ApiMessageType
+  nameWithType: ApiMessageType
+- uid: Celerik.NetCore.Services.ApiMessageType.Error
+  name: Error
+  href: api/Celerik.NetCore.Services.ApiMessageType.html#Celerik_NetCore_Services_ApiMessageType_Error
+  commentId: F:Celerik.NetCore.Services.ApiMessageType.Error
+  fullName: Celerik.NetCore.Services.ApiMessageType.Error
+  nameWithType: ApiMessageType.Error
+- uid: Celerik.NetCore.Services.ApiMessageType.Info
+  name: Info
+  href: api/Celerik.NetCore.Services.ApiMessageType.html#Celerik_NetCore_Services_ApiMessageType_Info
+  commentId: F:Celerik.NetCore.Services.ApiMessageType.Info
+  fullName: Celerik.NetCore.Services.ApiMessageType.Info
+  nameWithType: ApiMessageType.Info
+- uid: Celerik.NetCore.Services.ApiMessageType.Success
+  name: Success
+  href: api/Celerik.NetCore.Services.ApiMessageType.html#Celerik_NetCore_Services_ApiMessageType_Success
+  commentId: F:Celerik.NetCore.Services.ApiMessageType.Success
+  fullName: Celerik.NetCore.Services.ApiMessageType.Success
+  nameWithType: ApiMessageType.Success
+- uid: Celerik.NetCore.Services.ApiMessageType.Warning
+  name: Warning
+  href: api/Celerik.NetCore.Services.ApiMessageType.html#Celerik_NetCore_Services_ApiMessageType_Warning
+  commentId: F:Celerik.NetCore.Services.ApiMessageType.Warning
+  fullName: Celerik.NetCore.Services.ApiMessageType.Warning
+  nameWithType: ApiMessageType.Warning
+- uid: Celerik.NetCore.Services.ApiResponse`2
+  name: ApiResponse<TData, TStatusCode>
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html
+  commentId: T:Celerik.NetCore.Services.ApiResponse`2
+  name.vb: ApiResponse(Of TData, TStatusCode)
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode)
+  nameWithType: ApiResponse<TData, TStatusCode>
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode)
+- uid: Celerik.NetCore.Services.ApiResponse`2.Data
+  name: Data
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Data
+  commentId: P:Celerik.NetCore.Services.ApiResponse`2.Data
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Data
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Data
+  nameWithType: ApiResponse<TData, TStatusCode>.Data
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Data
+- uid: Celerik.NetCore.Services.ApiResponse`2.Data*
+  name: Data
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Data_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.Data
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Data
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Data
+  nameWithType: ApiResponse<TData, TStatusCode>.Data
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Data
+- uid: Celerik.NetCore.Services.ApiResponse`2.Message
+  name: Message
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Message
+  commentId: P:Celerik.NetCore.Services.ApiResponse`2.Message
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Message
+  nameWithType: ApiResponse<TData, TStatusCode>.Message
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Message
+- uid: Celerik.NetCore.Services.ApiResponse`2.Message*
+  name: Message
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Message_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.Message
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Message
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Message
+  nameWithType: ApiResponse<TData, TStatusCode>.Message
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Message
+- uid: Celerik.NetCore.Services.ApiResponse`2.MessageType
+  name: MessageType
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_MessageType
+  commentId: P:Celerik.NetCore.Services.ApiResponse`2.MessageType
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.MessageType
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).MessageType
+  nameWithType: ApiResponse<TData, TStatusCode>.MessageType
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).MessageType
+- uid: Celerik.NetCore.Services.ApiResponse`2.MessageType*
+  name: MessageType
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_MessageType_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.MessageType
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.MessageType
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).MessageType
+  nameWithType: ApiResponse<TData, TStatusCode>.MessageType
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).MessageType
+- uid: Celerik.NetCore.Services.ApiResponse`2.op_Implicit(Celerik.NetCore.Services.ApiError{`1})~Celerik.NetCore.Services.ApiResponse{`0,`1}
+  name: Implicit(ApiError<TStatusCode> to ApiResponse<TData, TStatusCode>)
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_op_Implicit_Celerik_NetCore_Services_ApiError__1___Celerik_NetCore_Services_ApiResponse__0__1_
+  commentId: M:Celerik.NetCore.Services.ApiResponse`2.op_Implicit(Celerik.NetCore.Services.ApiError{`1})~Celerik.NetCore.Services.ApiResponse{`0,`1}
+  name.vb: Widening(ApiError(Of TStatusCode) to ApiResponse(Of TData, TStatusCode))
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Implicit(Celerik.NetCore.Services.ApiError<TStatusCode> to Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>)
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Widening(Celerik.NetCore.Services.ApiError(Of TStatusCode) to Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode))
+  nameWithType: ApiResponse<TData, TStatusCode>.Implicit(ApiError<TStatusCode> to ApiResponse<TData, TStatusCode>)
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Widening(ApiError(Of TStatusCode) to ApiResponse(Of TData, TStatusCode))
+- uid: Celerik.NetCore.Services.ApiResponse`2.op_Implicit*
+  name: Implicit
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_op_Implicit_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Implicit
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Widening
+  nameWithType: ApiResponse<TData, TStatusCode>.Implicit
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Widening
+- uid: Celerik.NetCore.Services.ApiResponse`2.StatusCode
+  name: StatusCode
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_StatusCode
+  commentId: P:Celerik.NetCore.Services.ApiResponse`2.StatusCode
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).StatusCode
+  nameWithType: ApiResponse<TData, TStatusCode>.StatusCode
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).StatusCode
+- uid: Celerik.NetCore.Services.ApiResponse`2.StatusCode*
+  name: StatusCode
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_StatusCode_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.StatusCode
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.StatusCode
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).StatusCode
+  nameWithType: ApiResponse<TData, TStatusCode>.StatusCode
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).StatusCode
+- uid: Celerik.NetCore.Services.ApiResponse`2.Success
+  name: Success
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Success
+  commentId: P:Celerik.NetCore.Services.ApiResponse`2.Success
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Success
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Success
+  nameWithType: ApiResponse<TData, TStatusCode>.Success
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Success
+- uid: Celerik.NetCore.Services.ApiResponse`2.Success*
+  name: Success
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_Success_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.Success
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.Success
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).Success
+  nameWithType: ApiResponse<TData, TStatusCode>.Success
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).Success
+- uid: Celerik.NetCore.Services.ApiResponse`2.ToString
+  name: ToString()
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_ToString
+  commentId: M:Celerik.NetCore.Services.ApiResponse`2.ToString
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.ToString()
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).ToString()
+  nameWithType: ApiResponse<TData, TStatusCode>.ToString()
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).ToString()
+- uid: Celerik.NetCore.Services.ApiResponse`2.ToString*
+  name: ToString
+  href: api/Celerik.NetCore.Services.ApiResponse-2.html#Celerik_NetCore_Services_ApiResponse_2_ToString_
+  commentId: Overload:Celerik.NetCore.Services.ApiResponse`2.ToString
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>.ToString
+  fullName.vb: Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode).ToString
+  nameWithType: ApiResponse<TData, TStatusCode>.ToString
+  nameWithType.vb: ApiResponse(Of TData, TStatusCode).ToString
+- uid: Celerik.NetCore.Services.ApiService`2
+  name: ApiService<TLoggerCategory, TResources>
+  href: api/Celerik.NetCore.Services.ApiService-2.html
+  commentId: T:Celerik.NetCore.Services.ApiService`2
+  name.vb: ApiService(Of TLoggerCategory, TResources)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources)
+  nameWithType: ApiService<TLoggerCategory, TResources>
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources)
+- uid: Celerik.NetCore.Services.ApiService`2.#ctor(Celerik.NetCore.Services.ApiServiceArgs{`0})
+  name: ApiService(ApiServiceArgs<TLoggerCategory>)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2__ctor_Celerik_NetCore_Services_ApiServiceArgs__0__
+  commentId: M:Celerik.NetCore.Services.ApiService`2.#ctor(Celerik.NetCore.Services.ApiServiceArgs{`0})
+  name.vb: ApiService(ApiServiceArgs(Of TLoggerCategory))
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ApiService(Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ApiService(Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory))
+  nameWithType: ApiService<TLoggerCategory, TResources>.ApiService(ApiServiceArgs<TLoggerCategory>)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ApiService(ApiServiceArgs(Of TLoggerCategory))
+- uid: Celerik.NetCore.Services.ApiService`2.#ctor*
+  name: ApiService
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ApiService
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ApiService
+  nameWithType: ApiService<TLoggerCategory, TResources>.ApiService
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ApiService
+- uid: Celerik.NetCore.Services.ApiService`2.Config
+  name: Config
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Config
+  commentId: P:Celerik.NetCore.Services.ApiService`2.Config
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Config
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Config
+  nameWithType: ApiService<TLoggerCategory, TResources>.Config
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Config
+- uid: Celerik.NetCore.Services.ApiService`2.Config*
+  name: Config
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Config_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Config
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Config
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Config
+  nameWithType: ApiService<TLoggerCategory, TResources>.Config
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Config
+- uid: Celerik.NetCore.Services.ApiService`2.Dispose
+  name: Dispose()
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Dispose
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Dispose
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Dispose()
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Dispose()
+  nameWithType: ApiService<TLoggerCategory, TResources>.Dispose()
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Dispose()
+- uid: Celerik.NetCore.Services.ApiService`2.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Dispose_System_Boolean_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Dispose(System.Boolean)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Dispose(System.Boolean)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Dispose(System.Boolean)
+  nameWithType: ApiService<TLoggerCategory, TResources>.Dispose(Boolean)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Dispose(Boolean)
+- uid: Celerik.NetCore.Services.ApiService`2.Dispose*
+  name: Dispose
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Dispose_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Dispose
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Dispose
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Dispose
+  nameWithType: ApiService<TLoggerCategory, TResources>.Dispose
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Dispose
+- uid: Celerik.NetCore.Services.ApiService`2.EndLog(System.String)
+  name: EndLog(String)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_EndLog_System_String_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.EndLog(System.String)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.EndLog(System.String)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).EndLog(System.String)
+  nameWithType: ApiService<TLoggerCategory, TResources>.EndLog(String)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).EndLog(String)
+- uid: Celerik.NetCore.Services.ApiService`2.EndLog*
+  name: EndLog
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_EndLog_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.EndLog
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.EndLog
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).EndLog
+  nameWithType: ApiService<TLoggerCategory, TResources>.EndLog
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).EndLog
+- uid: Celerik.NetCore.Services.ApiService`2.Error*
+  name: Error
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Error_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Error
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Error
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Error
+  nameWithType: ApiService<TLoggerCategory, TResources>.Error
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Error
+- uid: Celerik.NetCore.Services.ApiService`2.Error``1(``0)
+  name: Error<TStatusCode>(TStatusCode)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Error__1___0_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Error``1(``0)
+  name.vb: Error(Of TStatusCode)(TStatusCode)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Error<TStatusCode>(TStatusCode)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Error(Of TStatusCode)(TStatusCode)
+  nameWithType: ApiService<TLoggerCategory, TResources>.Error<TStatusCode>(TStatusCode)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Error(Of TStatusCode)(TStatusCode)
+- uid: Celerik.NetCore.Services.ApiService`2.Error``1(System.String,System.String)
+  name: Error<TStatusCode>(String, String)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Error__1_System_String_System_String_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Error``1(System.String,System.String)
+  name.vb: Error(Of TStatusCode)(String, String)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Error<TStatusCode>(System.String, System.String)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Error(Of TStatusCode)(System.String, System.String)
+  nameWithType: ApiService<TLoggerCategory, TResources>.Error<TStatusCode>(String, String)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Error(Of TStatusCode)(String, String)
+- uid: Celerik.NetCore.Services.ApiService`2.HttpContext
+  name: HttpContext
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_HttpContext
+  commentId: P:Celerik.NetCore.Services.ApiService`2.HttpContext
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.HttpContext
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).HttpContext
+  nameWithType: ApiService<TLoggerCategory, TResources>.HttpContext
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).HttpContext
+- uid: Celerik.NetCore.Services.ApiService`2.HttpContext*
+  name: HttpContext
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_HttpContext_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.HttpContext
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.HttpContext
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).HttpContext
+  nameWithType: ApiService<TLoggerCategory, TResources>.HttpContext
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).HttpContext
+- uid: Celerik.NetCore.Services.ApiService`2.LocalizeString(System.String)
+  name: LocalizeString(String)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_LocalizeString_System_String_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.LocalizeString(System.String)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.LocalizeString(System.String)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).LocalizeString(System.String)
+  nameWithType: ApiService<TLoggerCategory, TResources>.LocalizeString(String)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).LocalizeString(String)
+- uid: Celerik.NetCore.Services.ApiService`2.LocalizeString(System.String,System.Object[])
+  name: LocalizeString(String, Object[])
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_LocalizeString_System_String_System_Object___
+  commentId: M:Celerik.NetCore.Services.ApiService`2.LocalizeString(System.String,System.Object[])
+  name.vb: LocalizeString(String, Object())
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.LocalizeString(System.String, System.Object[])
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).LocalizeString(System.String, System.Object())
+  nameWithType: ApiService<TLoggerCategory, TResources>.LocalizeString(String, Object[])
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).LocalizeString(String, Object())
+- uid: Celerik.NetCore.Services.ApiService`2.LocalizeString*
+  name: LocalizeString
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_LocalizeString_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.LocalizeString
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.LocalizeString
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).LocalizeString
+  nameWithType: ApiService<TLoggerCategory, TResources>.LocalizeString
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).LocalizeString
+- uid: Celerik.NetCore.Services.ApiService`2.Logger
+  name: Logger
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Logger
+  commentId: P:Celerik.NetCore.Services.ApiService`2.Logger
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Logger
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Logger
+  nameWithType: ApiService<TLoggerCategory, TResources>.Logger
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Logger
+- uid: Celerik.NetCore.Services.ApiService`2.Logger*
+  name: Logger
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Logger_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Logger
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Logger
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Logger
+  nameWithType: ApiService<TLoggerCategory, TResources>.Logger
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Logger
+- uid: Celerik.NetCore.Services.ApiService`2.Mapper
+  name: Mapper
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Mapper
+  commentId: P:Celerik.NetCore.Services.ApiService`2.Mapper
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Mapper
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Mapper
+  nameWithType: ApiService<TLoggerCategory, TResources>.Mapper
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Mapper
+- uid: Celerik.NetCore.Services.ApiService`2.Mapper*
+  name: Mapper
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Mapper_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Mapper
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Mapper
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Mapper
+  nameWithType: ApiService<TLoggerCategory, TResources>.Mapper
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Mapper
+- uid: Celerik.NetCore.Services.ApiService`2.Ok*
+  name: Ok
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Ok_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Ok
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Ok
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Ok
+  nameWithType: ApiService<TLoggerCategory, TResources>.Ok
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Ok
+- uid: Celerik.NetCore.Services.ApiService`2.Ok``2(System.Object,``1)
+  name: Ok<TData, TStatusCode>(Object, TStatusCode)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Ok__2_System_Object___1_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Ok``2(System.Object,``1)
+  name.vb: Ok(Of TData, TStatusCode)(Object, TStatusCode)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Ok<TData, TStatusCode>(System.Object, TStatusCode)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Ok(Of TData, TStatusCode)(System.Object, TStatusCode)
+  nameWithType: ApiService<TLoggerCategory, TResources>.Ok<TData, TStatusCode>(Object, TStatusCode)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Ok(Of TData, TStatusCode)(Object, TStatusCode)
+- uid: Celerik.NetCore.Services.ApiService`2.ProcessResponse*
+  name: ProcessResponse
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_ProcessResponse_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.ProcessResponse
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ProcessResponse
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ProcessResponse
+  nameWithType: ApiService<TLoggerCategory, TResources>.ProcessResponse
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ProcessResponse
+- uid: Celerik.NetCore.Services.ApiService`2.ProcessResponse``2(Celerik.NetCore.Services.ApiResponse{``0,``1},``1)
+  name: ProcessResponse<TData, TStatusCode>(ApiResponse<TData, TStatusCode>, TStatusCode)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_ProcessResponse__2_Celerik_NetCore_Services_ApiResponse___0___1____1_
+  commentId: M:Celerik.NetCore.Services.ApiService`2.ProcessResponse``2(Celerik.NetCore.Services.ApiResponse{``0,``1},``1)
+  name.vb: ProcessResponse(Of TData, TStatusCode)(ApiResponse(Of TData, TStatusCode), TStatusCode)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ProcessResponse<TData, TStatusCode>(Celerik.NetCore.Services.ApiResponse<TData, TStatusCode>, TStatusCode)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ProcessResponse(Of TData, TStatusCode)(Celerik.NetCore.Services.ApiResponse(Of TData, TStatusCode), TStatusCode)
+  nameWithType: ApiService<TLoggerCategory, TResources>.ProcessResponse<TData, TStatusCode>(ApiResponse<TData, TStatusCode>, TStatusCode)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ProcessResponse(Of TData, TStatusCode)(ApiResponse(Of TData, TStatusCode), TStatusCode)
+- uid: Celerik.NetCore.Services.ApiService`2.ServiceProvider
+  name: ServiceProvider
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_ServiceProvider
+  commentId: P:Celerik.NetCore.Services.ApiService`2.ServiceProvider
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ServiceProvider
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ServiceProvider
+  nameWithType: ApiService<TLoggerCategory, TResources>.ServiceProvider
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ServiceProvider
+- uid: Celerik.NetCore.Services.ApiService`2.ServiceProvider*
+  name: ServiceProvider
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_ServiceProvider_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.ServiceProvider
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.ServiceProvider
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).ServiceProvider
+  nameWithType: ApiService<TLoggerCategory, TResources>.ServiceProvider
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).ServiceProvider
+- uid: Celerik.NetCore.Services.ApiService`2.StartLog
+  name: StartLog()
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_StartLog
+  commentId: M:Celerik.NetCore.Services.ApiService`2.StartLog
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.StartLog()
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).StartLog()
+  nameWithType: ApiService<TLoggerCategory, TResources>.StartLog()
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).StartLog()
+- uid: Celerik.NetCore.Services.ApiService`2.StartLog*
+  name: StartLog
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_StartLog_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.StartLog
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.StartLog
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).StartLog
+  nameWithType: ApiService<TLoggerCategory, TResources>.StartLog
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).StartLog
+- uid: Celerik.NetCore.Services.ApiService`2.Validate*
+  name: Validate
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Validate_
+  commentId: Overload:Celerik.NetCore.Services.ApiService`2.Validate
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Validate
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Validate
+  nameWithType: ApiService<TLoggerCategory, TResources>.Validate
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Validate
+- uid: Celerik.NetCore.Services.ApiService`2.Validate``1(``0,System.String@,System.String@)
+  name: Validate<TPayload>(TPayload, out String, out String)
+  href: api/Celerik.NetCore.Services.ApiService-2.html#Celerik_NetCore_Services_ApiService_2_Validate__1___0_System_String__System_String__
+  commentId: M:Celerik.NetCore.Services.ApiService`2.Validate``1(``0,System.String@,System.String@)
+  name.vb: Validate(Of TPayload)(TPayload, ByRef String, ByRef String)
+  fullName: Celerik.NetCore.Services.ApiService<TLoggerCategory, TResources>.Validate<TPayload>(TPayload, out System.String, out System.String)
+  fullName.vb: Celerik.NetCore.Services.ApiService(Of TLoggerCategory, TResources).Validate(Of TPayload)(TPayload, ByRef System.String, ByRef System.String)
+  nameWithType: ApiService<TLoggerCategory, TResources>.Validate<TPayload>(TPayload, out String, out String)
+  nameWithType.vb: ApiService(Of TLoggerCategory, TResources).Validate(Of TPayload)(TPayload, ByRef String, ByRef String)
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1
+  name: ApiServiceArgs<TLoggerCategory>
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html
+  commentId: T:Celerik.NetCore.Services.ApiServiceArgs`1
+  name.vb: ApiServiceArgs(Of TLoggerCategory)
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory)
+  nameWithType: ApiServiceArgs<TLoggerCategory>
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory)
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.#ctor(IServiceProvider,IConfiguration,IStringLocalizerFactory,ILogger{`0},IMapper,IHttpContextAccessor)
+  name: ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor)
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1__ctor_IServiceProvider_IConfiguration_IStringLocalizerFactory_ILogger__0__IMapper_IHttpContextAccessor_
+  commentId: M:Celerik.NetCore.Services.ApiServiceArgs`1.#ctor(IServiceProvider,IConfiguration,IStringLocalizerFactory,ILogger{`0},IMapper,IHttpContextAccessor)
+  name.vb: ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor)
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor)
+  nameWithType: ApiServiceArgs<TLoggerCategory>.ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor)
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).ApiServiceArgs(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor)
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.#ctor*
+  name: ApiServiceArgs
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.ApiServiceArgs
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).ApiServiceArgs
+  nameWithType: ApiServiceArgs<TLoggerCategory>.ApiServiceArgs
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).ApiServiceArgs
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Config
+  name: Config
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Config
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.Config
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Config
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Config
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Config
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Config
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Config*
+  name: Config
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Config_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.Config
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Config
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Config
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Config
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Config
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.HttpContextAccessor
+  name: HttpContextAccessor
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_HttpContextAccessor
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.HttpContextAccessor
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.HttpContextAccessor
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).HttpContextAccessor
+  nameWithType: ApiServiceArgs<TLoggerCategory>.HttpContextAccessor
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).HttpContextAccessor
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.HttpContextAccessor*
+  name: HttpContextAccessor
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_HttpContextAccessor_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.HttpContextAccessor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.HttpContextAccessor
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).HttpContextAccessor
+  nameWithType: ApiServiceArgs<TLoggerCategory>.HttpContextAccessor
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).HttpContextAccessor
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Logger
+  name: Logger
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Logger
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.Logger
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Logger
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Logger
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Logger
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Logger
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Logger*
+  name: Logger
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Logger_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.Logger
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Logger
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Logger
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Logger
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Logger
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Mapper
+  name: Mapper
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Mapper
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.Mapper
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Mapper
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Mapper
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Mapper
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Mapper
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.Mapper*
+  name: Mapper
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_Mapper_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.Mapper
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.Mapper
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).Mapper
+  nameWithType: ApiServiceArgs<TLoggerCategory>.Mapper
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).Mapper
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.ServiceProvider
+  name: ServiceProvider
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_ServiceProvider
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.ServiceProvider
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.ServiceProvider
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).ServiceProvider
+  nameWithType: ApiServiceArgs<TLoggerCategory>.ServiceProvider
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).ServiceProvider
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.ServiceProvider*
+  name: ServiceProvider
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_ServiceProvider_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.ServiceProvider
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.ServiceProvider
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).ServiceProvider
+  nameWithType: ApiServiceArgs<TLoggerCategory>.ServiceProvider
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).ServiceProvider
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.StringLocalizerFactory
+  name: StringLocalizerFactory
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_StringLocalizerFactory
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgs`1.StringLocalizerFactory
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.StringLocalizerFactory
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).StringLocalizerFactory
+  nameWithType: ApiServiceArgs<TLoggerCategory>.StringLocalizerFactory
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).StringLocalizerFactory
+- uid: Celerik.NetCore.Services.ApiServiceArgs`1.StringLocalizerFactory*
+  name: StringLocalizerFactory
+  href: api/Celerik.NetCore.Services.ApiServiceArgs-1.html#Celerik_NetCore_Services_ApiServiceArgs_1_StringLocalizerFactory_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgs`1.StringLocalizerFactory
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>.StringLocalizerFactory
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory).StringLocalizerFactory
+  nameWithType: ApiServiceArgs<TLoggerCategory>.StringLocalizerFactory
+  nameWithType.vb: ApiServiceArgs(Of TLoggerCategory).StringLocalizerFactory
+- uid: Celerik.NetCore.Services.ApiServiceArgsEF`2
+  name: ApiServiceArgsEF<TLoggerCategory, TDbContext>
+  href: api/Celerik.NetCore.Services.ApiServiceArgsEF-2.html
+  commentId: T:Celerik.NetCore.Services.ApiServiceArgsEF`2
+  name.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext)
+  fullName: Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext)
+  nameWithType: ApiServiceArgsEF<TLoggerCategory, TDbContext>
+  nameWithType.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext)
+- uid: Celerik.NetCore.Services.ApiServiceArgsEF`2.#ctor(IServiceProvider,IConfiguration,IStringLocalizerFactory,ILogger{`0},IMapper,IHttpContextAccessor,`1)
+  name: ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor, TDbContext)
+  href: api/Celerik.NetCore.Services.ApiServiceArgsEF-2.html#Celerik_NetCore_Services_ApiServiceArgsEF_2__ctor_IServiceProvider_IConfiguration_IStringLocalizerFactory_ILogger__0__IMapper_IHttpContextAccessor__1_
+  commentId: M:Celerik.NetCore.Services.ApiServiceArgsEF`2.#ctor(IServiceProvider,IConfiguration,IStringLocalizerFactory,ILogger{`0},IMapper,IHttpContextAccessor,`1)
+  name.vb: ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor, TDbContext)
+  fullName: Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>.ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor, TDbContext)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext).ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor, TDbContext)
+  nameWithType: ApiServiceArgsEF<TLoggerCategory, TDbContext>.ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger<TLoggerCategory>, IMapper, IHttpContextAccessor, TDbContext)
+  nameWithType.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext).ApiServiceArgsEF(IServiceProvider, IConfiguration, IStringLocalizerFactory, ILogger(Of TLoggerCategory), IMapper, IHttpContextAccessor, TDbContext)
+- uid: Celerik.NetCore.Services.ApiServiceArgsEF`2.#ctor*
+  name: ApiServiceArgsEF
+  href: api/Celerik.NetCore.Services.ApiServiceArgsEF-2.html#Celerik_NetCore_Services_ApiServiceArgsEF_2__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgsEF`2.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>.ApiServiceArgsEF
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext).ApiServiceArgsEF
+  nameWithType: ApiServiceArgsEF<TLoggerCategory, TDbContext>.ApiServiceArgsEF
+  nameWithType.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext).ApiServiceArgsEF
+- uid: Celerik.NetCore.Services.ApiServiceArgsEF`2.DbContext
+  name: DbContext
+  href: api/Celerik.NetCore.Services.ApiServiceArgsEF-2.html#Celerik_NetCore_Services_ApiServiceArgsEF_2_DbContext
+  commentId: P:Celerik.NetCore.Services.ApiServiceArgsEF`2.DbContext
+  fullName: Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>.DbContext
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext).DbContext
+  nameWithType: ApiServiceArgsEF<TLoggerCategory, TDbContext>.DbContext
+  nameWithType.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext).DbContext
+- uid: Celerik.NetCore.Services.ApiServiceArgsEF`2.DbContext*
+  name: DbContext
+  href: api/Celerik.NetCore.Services.ApiServiceArgsEF-2.html#Celerik_NetCore_Services_ApiServiceArgsEF_2_DbContext_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceArgsEF`2.DbContext
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>.DbContext
+  fullName.vb: Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext).DbContext
+  nameWithType: ApiServiceArgsEF<TLoggerCategory, TDbContext>.DbContext
+  nameWithType.vb: ApiServiceArgsEF(Of TLoggerCategory, TDbContext).DbContext
+- uid: Celerik.NetCore.Services.ApiServiceEF`3
+  name: ApiServiceEF<TLoggerCategory, TResources, TDbContext>
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html
+  commentId: T:Celerik.NetCore.Services.ApiServiceEF`3
+  name.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext)
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext)
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext)
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.#ctor(Celerik.NetCore.Services.ApiServiceArgs{`0})
+  name: ApiServiceEF(ApiServiceArgs<TLoggerCategory>)
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3__ctor_Celerik_NetCore_Services_ApiServiceArgs__0__
+  commentId: M:Celerik.NetCore.Services.ApiServiceEF`3.#ctor(Celerik.NetCore.Services.ApiServiceArgs{`0})
+  name.vb: ApiServiceEF(ApiServiceArgs(Of TLoggerCategory))
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF(Celerik.NetCore.Services.ApiServiceArgs<TLoggerCategory>)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF(Celerik.NetCore.Services.ApiServiceArgs(Of TLoggerCategory))
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF(ApiServiceArgs<TLoggerCategory>)
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF(ApiServiceArgs(Of TLoggerCategory))
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.#ctor(Celerik.NetCore.Services.ApiServiceArgsEF{`0,`2})
+  name: ApiServiceEF(ApiServiceArgsEF<TLoggerCategory, TDbContext>)
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3__ctor_Celerik_NetCore_Services_ApiServiceArgsEF__0__2__
+  commentId: M:Celerik.NetCore.Services.ApiServiceEF`3.#ctor(Celerik.NetCore.Services.ApiServiceArgsEF{`0,`2})
+  name.vb: ApiServiceEF(ApiServiceArgsEF(Of TLoggerCategory, TDbContext))
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF(Celerik.NetCore.Services.ApiServiceArgsEF<TLoggerCategory, TDbContext>)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF(Celerik.NetCore.Services.ApiServiceArgsEF(Of TLoggerCategory, TDbContext))
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF(ApiServiceArgsEF<TLoggerCategory, TDbContext>)
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF(ApiServiceArgsEF(Of TLoggerCategory, TDbContext))
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.#ctor*
+  name: ApiServiceEF
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceEF`3.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.ApiServiceEF
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).ApiServiceEF
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.DbContext
+  name: DbContext
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_DbContext
+  commentId: P:Celerik.NetCore.Services.ApiServiceEF`3.DbContext
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DbContext
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DbContext
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DbContext
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DbContext
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.DbContext*
+  name: DbContext
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_DbContext_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceEF`3.DbContext
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DbContext
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DbContext
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DbContext
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DbContext
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.DetachEntities(System.Collections.Generic.IEnumerable{System.Object})
+  name: DetachEntities(IEnumerable<Object>)
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_DetachEntities_System_Collections_Generic_IEnumerable_System_Object__
+  commentId: M:Celerik.NetCore.Services.ApiServiceEF`3.DetachEntities(System.Collections.Generic.IEnumerable{System.Object})
+  name.vb: DetachEntities(IEnumerable(Of Object))
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DetachEntities(System.Collections.Generic.IEnumerable<System.Object>)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DetachEntities(System.Collections.Generic.IEnumerable(Of System.Object))
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DetachEntities(IEnumerable<Object>)
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DetachEntities(IEnumerable(Of Object))
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.DetachEntities*
+  name: DetachEntities
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_DetachEntities_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceEF`3.DetachEntities
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DetachEntities
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DetachEntities
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.DetachEntities
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).DetachEntities
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.SaveAsync(Celerik.NetCore.Services.ApiChangeAction,System.Object,System.Boolean)
+  name: SaveAsync(ApiChangeAction, Object, Boolean)
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_SaveAsync_Celerik_NetCore_Services_ApiChangeAction_System_Object_System_Boolean_
+  commentId: M:Celerik.NetCore.Services.ApiServiceEF`3.SaveAsync(Celerik.NetCore.Services.ApiChangeAction,System.Object,System.Boolean)
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SaveAsync(Celerik.NetCore.Services.ApiChangeAction, System.Object, System.Boolean)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SaveAsync(Celerik.NetCore.Services.ApiChangeAction, System.Object, System.Boolean)
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SaveAsync(ApiChangeAction, Object, Boolean)
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SaveAsync(ApiChangeAction, Object, Boolean)
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.SaveAsync*
+  name: SaveAsync
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_SaveAsync_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceEF`3.SaveAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SaveAsync
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SaveAsync
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SaveAsync
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SaveAsync
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.SetConnectionString(System.String)
+  name: SetConnectionString(String)
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_SetConnectionString_System_String_
+  commentId: M:Celerik.NetCore.Services.ApiServiceEF`3.SetConnectionString(System.String)
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SetConnectionString(System.String)
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SetConnectionString(System.String)
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SetConnectionString(String)
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SetConnectionString(String)
+- uid: Celerik.NetCore.Services.ApiServiceEF`3.SetConnectionString*
+  name: SetConnectionString
+  href: api/Celerik.NetCore.Services.ApiServiceEF-3.html#Celerik_NetCore_Services_ApiServiceEF_3_SetConnectionString_
+  commentId: Overload:Celerik.NetCore.Services.ApiServiceEF`3.SetConnectionString
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SetConnectionString
+  fullName.vb: Celerik.NetCore.Services.ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SetConnectionString
+  nameWithType: ApiServiceEF<TLoggerCategory, TResources, TDbContext>.SetConnectionString
+  nameWithType.vb: ApiServiceEF(Of TLoggerCategory, TResources, TDbContext).SetConnectionString
+- uid: Celerik.NetCore.Services.ApiServiceType
+  name: ApiServiceType
+  href: api/Celerik.NetCore.Services.ApiServiceType.html
+  commentId: T:Celerik.NetCore.Services.ApiServiceType
+  fullName: Celerik.NetCore.Services.ApiServiceType
+  nameWithType: ApiServiceType
+- uid: Celerik.NetCore.Services.ApiServiceType.ServiceEF
+  name: ServiceEF
+  href: api/Celerik.NetCore.Services.ApiServiceType.html#Celerik_NetCore_Services_ApiServiceType_ServiceEF
+  commentId: F:Celerik.NetCore.Services.ApiServiceType.ServiceEF
+  fullName: Celerik.NetCore.Services.ApiServiceType.ServiceEF
+  nameWithType: ApiServiceType.ServiceEF
+- uid: Celerik.NetCore.Services.ApiServiceType.ServiceHttp
+  name: ServiceHttp
+  href: api/Celerik.NetCore.Services.ApiServiceType.html#Celerik_NetCore_Services_ApiServiceType_ServiceHttp
+  commentId: F:Celerik.NetCore.Services.ApiServiceType.ServiceHttp
+  fullName: Celerik.NetCore.Services.ApiServiceType.ServiceHttp
+  nameWithType: ApiServiceType.ServiceHttp
+- uid: Celerik.NetCore.Services.ApiServiceType.ServiceMock
+  name: ServiceMock
+  href: api/Celerik.NetCore.Services.ApiServiceType.html#Celerik_NetCore_Services_ApiServiceType_ServiceMock
+  commentId: F:Celerik.NetCore.Services.ApiServiceType.ServiceMock
+  fullName: Celerik.NetCore.Services.ApiServiceType.ServiceMock
+  nameWithType: ApiServiceType.ServiceMock
+- uid: Celerik.NetCore.Services.ApiStatusCode
+  name: ApiStatusCode
+  href: api/Celerik.NetCore.Services.ApiStatusCode.html
+  commentId: T:Celerik.NetCore.Services.ApiStatusCode
+  fullName: Celerik.NetCore.Services.ApiStatusCode
+  nameWithType: ApiStatusCode
+- uid: Celerik.NetCore.Services.ApiStatusCode.BadRequest
+  name: BadRequest
+  href: api/Celerik.NetCore.Services.ApiStatusCode.html#Celerik_NetCore_Services_ApiStatusCode_BadRequest
+  commentId: F:Celerik.NetCore.Services.ApiStatusCode.BadRequest
+  fullName: Celerik.NetCore.Services.ApiStatusCode.BadRequest
+  nameWithType: ApiStatusCode.BadRequest
+- uid: Celerik.NetCore.Services.ApiStatusCode.Error
+  name: Error
+  href: api/Celerik.NetCore.Services.ApiStatusCode.html#Celerik_NetCore_Services_ApiStatusCode_Error
+  commentId: F:Celerik.NetCore.Services.ApiStatusCode.Error
+  fullName: Celerik.NetCore.Services.ApiStatusCode.Error
+  nameWithType: ApiStatusCode.Error
+- uid: Celerik.NetCore.Services.ApiStatusCode.Format
+  name: Format
+  href: api/Celerik.NetCore.Services.ApiStatusCode.html#Celerik_NetCore_Services_ApiStatusCode_Format
+  commentId: F:Celerik.NetCore.Services.ApiStatusCode.Format
+  fullName: Celerik.NetCore.Services.ApiStatusCode.Format
+  nameWithType: ApiStatusCode.Format
+- uid: Celerik.NetCore.Services.ApiStatusCode.Ok
+  name: Ok
+  href: api/Celerik.NetCore.Services.ApiStatusCode.html#Celerik_NetCore_Services_ApiStatusCode_Ok
+  commentId: F:Celerik.NetCore.Services.ApiStatusCode.Ok
+  fullName: Celerik.NetCore.Services.ApiStatusCode.Ok
+  nameWithType: ApiStatusCode.Ok
+- uid: Celerik.NetCore.Services.BaseTest
+  name: BaseTest
+  href: api/Celerik.NetCore.Services.BaseTest.html
+  commentId: T:Celerik.NetCore.Services.BaseTest
+  fullName: Celerik.NetCore.Services.BaseTest
+  nameWithType: BaseTest
+- uid: Celerik.NetCore.Services.BaseTest.#ctor(System.String,System.Object)
+  name: BaseTest(String, Object)
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest__ctor_System_String_System_Object_
+  commentId: M:Celerik.NetCore.Services.BaseTest.#ctor(System.String,System.Object)
+  fullName: Celerik.NetCore.Services.BaseTest.BaseTest(System.String, System.Object)
+  nameWithType: BaseTest.BaseTest(String, Object)
+- uid: Celerik.NetCore.Services.BaseTest.#ctor*
+  name: BaseTest
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest__ctor_
+  commentId: Overload:Celerik.NetCore.Services.BaseTest.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.BaseTest.BaseTest
+  nameWithType: BaseTest.BaseTest
+- uid: Celerik.NetCore.Services.BaseTest.AddServices(IServiceCollection)
+  name: AddServices(IServiceCollection)
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_AddServices_IServiceCollection_
+  commentId: M:Celerik.NetCore.Services.BaseTest.AddServices(IServiceCollection)
+  fullName: Celerik.NetCore.Services.BaseTest.AddServices(IServiceCollection)
+  nameWithType: BaseTest.AddServices(IServiceCollection)
+- uid: Celerik.NetCore.Services.BaseTest.AddServices*
+  name: AddServices
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_AddServices_
+  commentId: Overload:Celerik.NetCore.Services.BaseTest.AddServices
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.BaseTest.AddServices
+  nameWithType: BaseTest.AddServices
+- uid: Celerik.NetCore.Services.BaseTest.GetService*
+  name: GetService
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_GetService_
+  commentId: Overload:Celerik.NetCore.Services.BaseTest.GetService
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.BaseTest.GetService
+  nameWithType: BaseTest.GetService
+- uid: Celerik.NetCore.Services.BaseTest.GetService``1
+  name: GetService<TService>()
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_GetService__1
+  commentId: M:Celerik.NetCore.Services.BaseTest.GetService``1
+  name.vb: GetService(Of TService)()
+  fullName: Celerik.NetCore.Services.BaseTest.GetService<TService>()
+  fullName.vb: Celerik.NetCore.Services.BaseTest.GetService(Of TService)()
+  nameWithType: BaseTest.GetService<TService>()
+  nameWithType.vb: BaseTest.GetService(Of TService)()
+- uid: Celerik.NetCore.Services.BaseTest.GetValidator*
+  name: GetValidator
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_GetValidator_
+  commentId: Overload:Celerik.NetCore.Services.BaseTest.GetValidator
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.BaseTest.GetValidator
+  nameWithType: BaseTest.GetValidator
+- uid: Celerik.NetCore.Services.BaseTest.GetValidator``1(``0)
+  name: GetValidator<TPayload>(TPayload)
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_GetValidator__1___0_
+  commentId: M:Celerik.NetCore.Services.BaseTest.GetValidator``1(``0)
+  name.vb: GetValidator(Of TPayload)(TPayload)
+  fullName: Celerik.NetCore.Services.BaseTest.GetValidator<TPayload>(TPayload)
+  fullName.vb: Celerik.NetCore.Services.BaseTest.GetValidator(Of TPayload)(TPayload)
+  nameWithType: BaseTest.GetValidator<TPayload>(TPayload)
+  nameWithType.vb: BaseTest.GetValidator(Of TPayload)(TPayload)
+- uid: Celerik.NetCore.Services.BaseTest.SetUserClaims(System.String,System.Object)
+  name: SetUserClaims(String, Object)
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_SetUserClaims_System_String_System_Object_
+  commentId: M:Celerik.NetCore.Services.BaseTest.SetUserClaims(System.String,System.Object)
+  fullName: Celerik.NetCore.Services.BaseTest.SetUserClaims(System.String, System.Object)
+  nameWithType: BaseTest.SetUserClaims(String, Object)
+- uid: Celerik.NetCore.Services.BaseTest.SetUserClaims*
+  name: SetUserClaims
+  href: api/Celerik.NetCore.Services.BaseTest.html#Celerik_NetCore_Services_BaseTest_SetUserClaims_
+  commentId: Overload:Celerik.NetCore.Services.BaseTest.SetUserClaims
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.BaseTest.SetUserClaims
+  nameWithType: BaseTest.SetUserClaims
+- uid: Celerik.NetCore.Services.ConfigException
+  name: ConfigException
+  href: api/Celerik.NetCore.Services.ConfigException.html
+  commentId: T:Celerik.NetCore.Services.ConfigException
+  fullName: Celerik.NetCore.Services.ConfigException
+  nameWithType: ConfigException
+- uid: Celerik.NetCore.Services.ConfigException.#ctor
+  name: ConfigException()
+  href: api/Celerik.NetCore.Services.ConfigException.html#Celerik_NetCore_Services_ConfigException__ctor
+  commentId: M:Celerik.NetCore.Services.ConfigException.#ctor
+  fullName: Celerik.NetCore.Services.ConfigException.ConfigException()
+  nameWithType: ConfigException.ConfigException()
+- uid: Celerik.NetCore.Services.ConfigException.#ctor(SerializationInfo,StreamingContext)
+  name: ConfigException(SerializationInfo, StreamingContext)
+  href: api/Celerik.NetCore.Services.ConfigException.html#Celerik_NetCore_Services_ConfigException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:Celerik.NetCore.Services.ConfigException.#ctor(SerializationInfo,StreamingContext)
+  fullName: Celerik.NetCore.Services.ConfigException.ConfigException(SerializationInfo, StreamingContext)
+  nameWithType: ConfigException.ConfigException(SerializationInfo, StreamingContext)
+- uid: Celerik.NetCore.Services.ConfigException.#ctor(System.String)
+  name: ConfigException(String)
+  href: api/Celerik.NetCore.Services.ConfigException.html#Celerik_NetCore_Services_ConfigException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Services.ConfigException.#ctor(System.String)
+  fullName: Celerik.NetCore.Services.ConfigException.ConfigException(System.String)
+  nameWithType: ConfigException.ConfigException(String)
+- uid: Celerik.NetCore.Services.ConfigException.#ctor(System.String,Exception)
+  name: ConfigException(String, Exception)
+  href: api/Celerik.NetCore.Services.ConfigException.html#Celerik_NetCore_Services_ConfigException__ctor_System_String_Exception_
+  commentId: M:Celerik.NetCore.Services.ConfigException.#ctor(System.String,Exception)
+  fullName: Celerik.NetCore.Services.ConfigException.ConfigException(System.String, Exception)
+  nameWithType: ConfigException.ConfigException(String, Exception)
+- uid: Celerik.NetCore.Services.ConfigException.#ctor*
+  name: ConfigException
+  href: api/Celerik.NetCore.Services.ConfigException.html#Celerik_NetCore_Services_ConfigException__ctor_
+  commentId: Overload:Celerik.NetCore.Services.ConfigException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ConfigException.ConfigException
+  nameWithType: ConfigException.ConfigException
+- uid: Celerik.NetCore.Services.ConfigUtility
+  name: ConfigUtility
+  href: api/Celerik.NetCore.Services.ConfigUtility.html
+  commentId: T:Celerik.NetCore.Services.ConfigUtility
+  fullName: Celerik.NetCore.Services.ConfigUtility
+  nameWithType: ConfigUtility
+- uid: Celerik.NetCore.Services.ConfigUtility.ReadEnum*
+  name: ReadEnum
+  href: api/Celerik.NetCore.Services.ConfigUtility.html#Celerik_NetCore_Services_ConfigUtility_ReadEnum_
+  commentId: Overload:Celerik.NetCore.Services.ConfigUtility.ReadEnum
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ConfigUtility.ReadEnum
+  nameWithType: ConfigUtility.ReadEnum
+- uid: Celerik.NetCore.Services.ConfigUtility.ReadEnum``1(IConfiguration,System.String)
+  name: ReadEnum<TEnum>(IConfiguration, String)
+  href: api/Celerik.NetCore.Services.ConfigUtility.html#Celerik_NetCore_Services_ConfigUtility_ReadEnum__1_IConfiguration_System_String_
+  commentId: M:Celerik.NetCore.Services.ConfigUtility.ReadEnum``1(IConfiguration,System.String)
+  name.vb: ReadEnum(Of TEnum)(IConfiguration, String)
+  fullName: Celerik.NetCore.Services.ConfigUtility.ReadEnum<TEnum>(IConfiguration, System.String)
+  fullName.vb: Celerik.NetCore.Services.ConfigUtility.ReadEnum(Of TEnum)(IConfiguration, System.String)
+  nameWithType: ConfigUtility.ReadEnum<TEnum>(IConfiguration, String)
+  nameWithType.vb: ConfigUtility.ReadEnum(Of TEnum)(IConfiguration, String)
+- uid: Celerik.NetCore.Services.ConfigUtility.ReadObject*
+  name: ReadObject
+  href: api/Celerik.NetCore.Services.ConfigUtility.html#Celerik_NetCore_Services_ConfigUtility_ReadObject_
+  commentId: Overload:Celerik.NetCore.Services.ConfigUtility.ReadObject
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ConfigUtility.ReadObject
+  nameWithType: ConfigUtility.ReadObject
+- uid: Celerik.NetCore.Services.ConfigUtility.ReadObject``1(IConfiguration,System.String)
+  name: ReadObject<TObject>(IConfiguration, String)
+  href: api/Celerik.NetCore.Services.ConfigUtility.html#Celerik_NetCore_Services_ConfigUtility_ReadObject__1_IConfiguration_System_String_
+  commentId: M:Celerik.NetCore.Services.ConfigUtility.ReadObject``1(IConfiguration,System.String)
+  name.vb: ReadObject(Of TObject)(IConfiguration, String)
+  fullName: Celerik.NetCore.Services.ConfigUtility.ReadObject<TObject>(IConfiguration, System.String)
+  fullName.vb: Celerik.NetCore.Services.ConfigUtility.ReadObject(Of TObject)(IConfiguration, System.String)
+  nameWithType: ConfigUtility.ReadObject<TObject>(IConfiguration, String)
+  nameWithType.vb: ConfigUtility.ReadObject(Of TObject)(IConfiguration, String)
+- uid: Celerik.NetCore.Services.DummyConfiguration
+  name: DummyConfiguration
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html
+  commentId: T:Celerik.NetCore.Services.DummyConfiguration
+  fullName: Celerik.NetCore.Services.DummyConfiguration
+  nameWithType: DummyConfiguration
+- uid: Celerik.NetCore.Services.DummyConfiguration.#ctor
+  name: DummyConfiguration()
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration__ctor
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.#ctor
+  fullName: Celerik.NetCore.Services.DummyConfiguration.DummyConfiguration()
+  nameWithType: DummyConfiguration.DummyConfiguration()
+- uid: Celerik.NetCore.Services.DummyConfiguration.#ctor*
+  name: DummyConfiguration
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration__ctor_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.DummyConfiguration
+  nameWithType: DummyConfiguration.DummyConfiguration
+- uid: Celerik.NetCore.Services.DummyConfiguration.Dispose
+  name: Dispose()
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_Dispose
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.Dispose
+  fullName: Celerik.NetCore.Services.DummyConfiguration.Dispose()
+  nameWithType: DummyConfiguration.Dispose()
+- uid: Celerik.NetCore.Services.DummyConfiguration.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_Dispose_System_Boolean_
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.Dispose(System.Boolean)
+  fullName: Celerik.NetCore.Services.DummyConfiguration.Dispose(System.Boolean)
+  nameWithType: DummyConfiguration.Dispose(Boolean)
+- uid: Celerik.NetCore.Services.DummyConfiguration.Dispose*
+  name: Dispose
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_Dispose_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.Dispose
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.Dispose
+  nameWithType: DummyConfiguration.Dispose
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetChildren
+  name: GetChildren()
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetChildren
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.GetChildren
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetChildren()
+  nameWithType: DummyConfiguration.GetChildren()
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetChildren*
+  name: GetChildren
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetChildren_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.GetChildren
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetChildren
+  nameWithType: DummyConfiguration.GetChildren
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetReloadToken
+  name: GetReloadToken()
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetReloadToken
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.GetReloadToken
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetReloadToken()
+  nameWithType: DummyConfiguration.GetReloadToken()
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetReloadToken*
+  name: GetReloadToken
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetReloadToken_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.GetReloadToken
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetReloadToken
+  nameWithType: DummyConfiguration.GetReloadToken
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetSection(System.String)
+  name: GetSection(String)
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetSection_System_String_
+  commentId: M:Celerik.NetCore.Services.DummyConfiguration.GetSection(System.String)
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetSection(System.String)
+  nameWithType: DummyConfiguration.GetSection(String)
+- uid: Celerik.NetCore.Services.DummyConfiguration.GetSection*
+  name: GetSection
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_GetSection_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.GetSection
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.GetSection
+  nameWithType: DummyConfiguration.GetSection
+- uid: Celerik.NetCore.Services.DummyConfiguration.Item(System.String)
+  name: Item[String]
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_Item_System_String_
+  commentId: P:Celerik.NetCore.Services.DummyConfiguration.Item(System.String)
+  name.vb: Item(String)
+  fullName: Celerik.NetCore.Services.DummyConfiguration.Item[System.String]
+  fullName.vb: Celerik.NetCore.Services.DummyConfiguration.Item(System.String)
+  nameWithType: DummyConfiguration.Item[String]
+  nameWithType.vb: DummyConfiguration.Item(String)
+- uid: Celerik.NetCore.Services.DummyConfiguration.Item*
+  name: Item
+  href: api/Celerik.NetCore.Services.DummyConfiguration.html#Celerik_NetCore_Services_DummyConfiguration_Item_
+  commentId: Overload:Celerik.NetCore.Services.DummyConfiguration.Item
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyConfiguration.Item
+  nameWithType: DummyConfiguration.Item
+- uid: Celerik.NetCore.Services.DummyHttpContextAccessor
+  name: DummyHttpContextAccessor
+  href: api/Celerik.NetCore.Services.DummyHttpContextAccessor.html
+  commentId: T:Celerik.NetCore.Services.DummyHttpContextAccessor
+  fullName: Celerik.NetCore.Services.DummyHttpContextAccessor
+  nameWithType: DummyHttpContextAccessor
+- uid: Celerik.NetCore.Services.DummyHttpContextAccessor.#ctor(System.String,System.Object)
+  name: DummyHttpContextAccessor(String, Object)
+  href: api/Celerik.NetCore.Services.DummyHttpContextAccessor.html#Celerik_NetCore_Services_DummyHttpContextAccessor__ctor_System_String_System_Object_
+  commentId: M:Celerik.NetCore.Services.DummyHttpContextAccessor.#ctor(System.String,System.Object)
+  fullName: Celerik.NetCore.Services.DummyHttpContextAccessor.DummyHttpContextAccessor(System.String, System.Object)
+  nameWithType: DummyHttpContextAccessor.DummyHttpContextAccessor(String, Object)
+- uid: Celerik.NetCore.Services.DummyHttpContextAccessor.#ctor*
+  name: DummyHttpContextAccessor
+  href: api/Celerik.NetCore.Services.DummyHttpContextAccessor.html#Celerik_NetCore_Services_DummyHttpContextAccessor__ctor_
+  commentId: Overload:Celerik.NetCore.Services.DummyHttpContextAccessor.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyHttpContextAccessor.DummyHttpContextAccessor
+  nameWithType: DummyHttpContextAccessor.DummyHttpContextAccessor
+- uid: Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext
+  name: HttpContext
+  href: api/Celerik.NetCore.Services.DummyHttpContextAccessor.html#Celerik_NetCore_Services_DummyHttpContextAccessor_HttpContext
+  commentId: P:Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext
+  fullName: Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext
+  nameWithType: DummyHttpContextAccessor.HttpContext
+- uid: Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext*
+  name: HttpContext
+  href: api/Celerik.NetCore.Services.DummyHttpContextAccessor.html#Celerik_NetCore_Services_DummyHttpContextAccessor_HttpContext_
+  commentId: Overload:Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.DummyHttpContextAccessor.HttpContext
+  nameWithType: DummyHttpContextAccessor.HttpContext
+- uid: Celerik.NetCore.Services.FactoryException
+  name: FactoryException
+  href: api/Celerik.NetCore.Services.FactoryException.html
+  commentId: T:Celerik.NetCore.Services.FactoryException
+  fullName: Celerik.NetCore.Services.FactoryException
+  nameWithType: FactoryException
+- uid: Celerik.NetCore.Services.FactoryException.#ctor
+  name: FactoryException()
+  href: api/Celerik.NetCore.Services.FactoryException.html#Celerik_NetCore_Services_FactoryException__ctor
+  commentId: M:Celerik.NetCore.Services.FactoryException.#ctor
+  fullName: Celerik.NetCore.Services.FactoryException.FactoryException()
+  nameWithType: FactoryException.FactoryException()
+- uid: Celerik.NetCore.Services.FactoryException.#ctor(SerializationInfo,StreamingContext)
+  name: FactoryException(SerializationInfo, StreamingContext)
+  href: api/Celerik.NetCore.Services.FactoryException.html#Celerik_NetCore_Services_FactoryException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:Celerik.NetCore.Services.FactoryException.#ctor(SerializationInfo,StreamingContext)
+  fullName: Celerik.NetCore.Services.FactoryException.FactoryException(SerializationInfo, StreamingContext)
+  nameWithType: FactoryException.FactoryException(SerializationInfo, StreamingContext)
+- uid: Celerik.NetCore.Services.FactoryException.#ctor(System.String)
+  name: FactoryException(String)
+  href: api/Celerik.NetCore.Services.FactoryException.html#Celerik_NetCore_Services_FactoryException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Services.FactoryException.#ctor(System.String)
+  fullName: Celerik.NetCore.Services.FactoryException.FactoryException(System.String)
+  nameWithType: FactoryException.FactoryException(String)
+- uid: Celerik.NetCore.Services.FactoryException.#ctor(System.String,Exception)
+  name: FactoryException(String, Exception)
+  href: api/Celerik.NetCore.Services.FactoryException.html#Celerik_NetCore_Services_FactoryException__ctor_System_String_Exception_
+  commentId: M:Celerik.NetCore.Services.FactoryException.#ctor(System.String,Exception)
+  fullName: Celerik.NetCore.Services.FactoryException.FactoryException(System.String, Exception)
+  nameWithType: FactoryException.FactoryException(String, Exception)
+- uid: Celerik.NetCore.Services.FactoryException.#ctor*
+  name: FactoryException
+  href: api/Celerik.NetCore.Services.FactoryException.html#Celerik_NetCore_Services_FactoryException__ctor_
+  commentId: Overload:Celerik.NetCore.Services.FactoryException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.FactoryException.FactoryException
+  nameWithType: FactoryException.FactoryException
+- uid: Celerik.NetCore.Services.InjectException
+  name: InjectException
+  href: api/Celerik.NetCore.Services.InjectException.html
+  commentId: T:Celerik.NetCore.Services.InjectException
+  fullName: Celerik.NetCore.Services.InjectException
+  nameWithType: InjectException
+- uid: Celerik.NetCore.Services.InjectException.#ctor
+  name: InjectException()
+  href: api/Celerik.NetCore.Services.InjectException.html#Celerik_NetCore_Services_InjectException__ctor
+  commentId: M:Celerik.NetCore.Services.InjectException.#ctor
+  fullName: Celerik.NetCore.Services.InjectException.InjectException()
+  nameWithType: InjectException.InjectException()
+- uid: Celerik.NetCore.Services.InjectException.#ctor(SerializationInfo,StreamingContext)
+  name: InjectException(SerializationInfo, StreamingContext)
+  href: api/Celerik.NetCore.Services.InjectException.html#Celerik_NetCore_Services_InjectException__ctor_SerializationInfo_StreamingContext_
+  commentId: M:Celerik.NetCore.Services.InjectException.#ctor(SerializationInfo,StreamingContext)
+  fullName: Celerik.NetCore.Services.InjectException.InjectException(SerializationInfo, StreamingContext)
+  nameWithType: InjectException.InjectException(SerializationInfo, StreamingContext)
+- uid: Celerik.NetCore.Services.InjectException.#ctor(System.String)
+  name: InjectException(String)
+  href: api/Celerik.NetCore.Services.InjectException.html#Celerik_NetCore_Services_InjectException__ctor_System_String_
+  commentId: M:Celerik.NetCore.Services.InjectException.#ctor(System.String)
+  fullName: Celerik.NetCore.Services.InjectException.InjectException(System.String)
+  nameWithType: InjectException.InjectException(String)
+- uid: Celerik.NetCore.Services.InjectException.#ctor(System.String,Exception)
+  name: InjectException(String, Exception)
+  href: api/Celerik.NetCore.Services.InjectException.html#Celerik_NetCore_Services_InjectException__ctor_System_String_Exception_
+  commentId: M:Celerik.NetCore.Services.InjectException.#ctor(System.String,Exception)
+  fullName: Celerik.NetCore.Services.InjectException.InjectException(System.String, Exception)
+  nameWithType: InjectException.InjectException(String, Exception)
+- uid: Celerik.NetCore.Services.InjectException.#ctor*
+  name: InjectException
+  href: api/Celerik.NetCore.Services.InjectException.html#Celerik_NetCore_Services_InjectException__ctor_
+  commentId: Overload:Celerik.NetCore.Services.InjectException.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.InjectException.InjectException
+  nameWithType: InjectException.InjectException
+- uid: Celerik.NetCore.Services.PaginationExtensions
+  name: PaginationExtensions
+  href: api/Celerik.NetCore.Services.PaginationExtensions.html
+  commentId: T:Celerik.NetCore.Services.PaginationExtensions
+  fullName: Celerik.NetCore.Services.PaginationExtensions
+  nameWithType: PaginationExtensions
+- uid: Celerik.NetCore.Services.PaginationExtensions.PaginateAsync*
+  name: PaginateAsync
+  href: api/Celerik.NetCore.Services.PaginationExtensions.html#Celerik_NetCore_Services_PaginationExtensions_PaginateAsync_
+  commentId: Overload:Celerik.NetCore.Services.PaginationExtensions.PaginateAsync
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationExtensions.PaginateAsync
+  nameWithType: PaginationExtensions.PaginateAsync
+- uid: Celerik.NetCore.Services.PaginationExtensions.PaginateAsync``1(IQueryable{``0},Celerik.NetCore.Services.PaginationRequest)
+  name: PaginateAsync<TItem>(IQueryable<TItem>, PaginationRequest)
+  href: api/Celerik.NetCore.Services.PaginationExtensions.html#Celerik_NetCore_Services_PaginationExtensions_PaginateAsync__1_IQueryable___0__Celerik_NetCore_Services_PaginationRequest_
+  commentId: M:Celerik.NetCore.Services.PaginationExtensions.PaginateAsync``1(IQueryable{``0},Celerik.NetCore.Services.PaginationRequest)
+  name.vb: PaginateAsync(Of TItem)(IQueryable(Of TItem), PaginationRequest)
+  fullName: Celerik.NetCore.Services.PaginationExtensions.PaginateAsync<TItem>(IQueryable<TItem>, Celerik.NetCore.Services.PaginationRequest)
+  fullName.vb: Celerik.NetCore.Services.PaginationExtensions.PaginateAsync(Of TItem)(IQueryable(Of TItem), Celerik.NetCore.Services.PaginationRequest)
+  nameWithType: PaginationExtensions.PaginateAsync<TItem>(IQueryable<TItem>, PaginationRequest)
+  nameWithType.vb: PaginationExtensions.PaginateAsync(Of TItem)(IQueryable(Of TItem), PaginationRequest)
+- uid: Celerik.NetCore.Services.PaginationRequest
+  name: PaginationRequest
+  href: api/Celerik.NetCore.Services.PaginationRequest.html
+  commentId: T:Celerik.NetCore.Services.PaginationRequest
+  fullName: Celerik.NetCore.Services.PaginationRequest
+  nameWithType: PaginationRequest
+- uid: Celerik.NetCore.Services.PaginationRequest.IsAscending
+  name: IsAscending
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_IsAscending
+  commentId: P:Celerik.NetCore.Services.PaginationRequest.IsAscending
+  fullName: Celerik.NetCore.Services.PaginationRequest.IsAscending
+  nameWithType: PaginationRequest.IsAscending
+- uid: Celerik.NetCore.Services.PaginationRequest.IsAscending*
+  name: IsAscending
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_IsAscending_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequest.IsAscending
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequest.IsAscending
+  nameWithType: PaginationRequest.IsAscending
+- uid: Celerik.NetCore.Services.PaginationRequest.PageNumber
+  name: PageNumber
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_PageNumber
+  commentId: P:Celerik.NetCore.Services.PaginationRequest.PageNumber
+  fullName: Celerik.NetCore.Services.PaginationRequest.PageNumber
+  nameWithType: PaginationRequest.PageNumber
+- uid: Celerik.NetCore.Services.PaginationRequest.PageNumber*
+  name: PageNumber
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_PageNumber_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequest.PageNumber
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequest.PageNumber
+  nameWithType: PaginationRequest.PageNumber
+- uid: Celerik.NetCore.Services.PaginationRequest.PageSize
+  name: PageSize
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_PageSize
+  commentId: P:Celerik.NetCore.Services.PaginationRequest.PageSize
+  fullName: Celerik.NetCore.Services.PaginationRequest.PageSize
+  nameWithType: PaginationRequest.PageSize
+- uid: Celerik.NetCore.Services.PaginationRequest.PageSize*
+  name: PageSize
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_PageSize_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequest.PageSize
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequest.PageSize
+  nameWithType: PaginationRequest.PageSize
+- uid: Celerik.NetCore.Services.PaginationRequest.SortDirection
+  name: SortDirection
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_SortDirection
+  commentId: P:Celerik.NetCore.Services.PaginationRequest.SortDirection
+  fullName: Celerik.NetCore.Services.PaginationRequest.SortDirection
+  nameWithType: PaginationRequest.SortDirection
+- uid: Celerik.NetCore.Services.PaginationRequest.SortDirection*
+  name: SortDirection
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_SortDirection_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequest.SortDirection
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequest.SortDirection
+  nameWithType: PaginationRequest.SortDirection
+- uid: Celerik.NetCore.Services.PaginationRequest.SortKey
+  name: SortKey
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_SortKey
+  commentId: P:Celerik.NetCore.Services.PaginationRequest.SortKey
+  fullName: Celerik.NetCore.Services.PaginationRequest.SortKey
+  nameWithType: PaginationRequest.SortKey
+- uid: Celerik.NetCore.Services.PaginationRequest.SortKey*
+  name: SortKey
+  href: api/Celerik.NetCore.Services.PaginationRequest.html#Celerik_NetCore_Services_PaginationRequest_SortKey_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequest.SortKey
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequest.SortKey
+  nameWithType: PaginationRequest.SortKey
+- uid: Celerik.NetCore.Services.PaginationRequest`1
+  name: PaginationRequest<TEntity>
+  href: api/Celerik.NetCore.Services.PaginationRequest-1.html
+  commentId: T:Celerik.NetCore.Services.PaginationRequest`1
+  name.vb: PaginationRequest(Of TEntity)
+  fullName: Celerik.NetCore.Services.PaginationRequest<TEntity>
+  fullName.vb: Celerik.NetCore.Services.PaginationRequest(Of TEntity)
+  nameWithType: PaginationRequest<TEntity>
+  nameWithType.vb: PaginationRequest(Of TEntity)
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`1
+  name: PaginationRequestValidator<TPayload>
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-1.html
+  commentId: T:Celerik.NetCore.Services.PaginationRequestValidator`1
+  name.vb: PaginationRequestValidator(Of TPayload)
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload>
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload)
+  nameWithType: PaginationRequestValidator<TPayload>
+  nameWithType.vb: PaginationRequestValidator(Of TPayload)
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`1.#ctor
+  name: PaginationRequestValidator()
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-1.html#Celerik_NetCore_Services_PaginationRequestValidator_1__ctor
+  commentId: M:Celerik.NetCore.Services.PaginationRequestValidator`1.#ctor
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload>.PaginationRequestValidator()
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload).PaginationRequestValidator()
+  nameWithType: PaginationRequestValidator<TPayload>.PaginationRequestValidator()
+  nameWithType.vb: PaginationRequestValidator(Of TPayload).PaginationRequestValidator()
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`1.#ctor*
+  name: PaginationRequestValidator
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-1.html#Celerik_NetCore_Services_PaginationRequestValidator_1__ctor_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequestValidator`1.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload>.PaginationRequestValidator
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload).PaginationRequestValidator
+  nameWithType: PaginationRequestValidator<TPayload>.PaginationRequestValidator
+  nameWithType.vb: PaginationRequestValidator(Of TPayload).PaginationRequestValidator
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`2
+  name: PaginationRequestValidator<TPayload, TEntity>
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-2.html
+  commentId: T:Celerik.NetCore.Services.PaginationRequestValidator`2
+  name.vb: PaginationRequestValidator(Of TPayload, TEntity)
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload, TEntity>
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload, TEntity)
+  nameWithType: PaginationRequestValidator<TPayload, TEntity>
+  nameWithType.vb: PaginationRequestValidator(Of TPayload, TEntity)
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`2.#ctor
+  name: PaginationRequestValidator()
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-2.html#Celerik_NetCore_Services_PaginationRequestValidator_2__ctor
+  commentId: M:Celerik.NetCore.Services.PaginationRequestValidator`2.#ctor
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload, TEntity>.PaginationRequestValidator()
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload, TEntity).PaginationRequestValidator()
+  nameWithType: PaginationRequestValidator<TPayload, TEntity>.PaginationRequestValidator()
+  nameWithType.vb: PaginationRequestValidator(Of TPayload, TEntity).PaginationRequestValidator()
+- uid: Celerik.NetCore.Services.PaginationRequestValidator`2.#ctor*
+  name: PaginationRequestValidator
+  href: api/Celerik.NetCore.Services.PaginationRequestValidator-2.html#Celerik_NetCore_Services_PaginationRequestValidator_2__ctor_
+  commentId: Overload:Celerik.NetCore.Services.PaginationRequestValidator`2.#ctor
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationRequestValidator<TPayload, TEntity>.PaginationRequestValidator
+  fullName.vb: Celerik.NetCore.Services.PaginationRequestValidator(Of TPayload, TEntity).PaginationRequestValidator
+  nameWithType: PaginationRequestValidator<TPayload, TEntity>.PaginationRequestValidator
+  nameWithType.vb: PaginationRequestValidator(Of TPayload, TEntity).PaginationRequestValidator
+- uid: Celerik.NetCore.Services.PaginationResult`1
+  name: PaginationResult<TItem>
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html
+  commentId: T:Celerik.NetCore.Services.PaginationResult`1
+  name.vb: PaginationResult(Of TItem)
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem)
+  nameWithType: PaginationResult<TItem>
+  nameWithType.vb: PaginationResult(Of TItem)
+- uid: Celerik.NetCore.Services.PaginationResult`1.Items
+  name: Items
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_Items
+  commentId: P:Celerik.NetCore.Services.PaginationResult`1.Items
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.Items
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).Items
+  nameWithType: PaginationResult<TItem>.Items
+  nameWithType.vb: PaginationResult(Of TItem).Items
+- uid: Celerik.NetCore.Services.PaginationResult`1.Items*
+  name: Items
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_Items_
+  commentId: Overload:Celerik.NetCore.Services.PaginationResult`1.Items
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.Items
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).Items
+  nameWithType: PaginationResult<TItem>.Items
+  nameWithType.vb: PaginationResult(Of TItem).Items
+- uid: Celerik.NetCore.Services.PaginationResult`1.PageCount
+  name: PageCount
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_PageCount
+  commentId: P:Celerik.NetCore.Services.PaginationResult`1.PageCount
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.PageCount
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).PageCount
+  nameWithType: PaginationResult<TItem>.PageCount
+  nameWithType.vb: PaginationResult(Of TItem).PageCount
+- uid: Celerik.NetCore.Services.PaginationResult`1.PageCount*
+  name: PageCount
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_PageCount_
+  commentId: Overload:Celerik.NetCore.Services.PaginationResult`1.PageCount
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.PageCount
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).PageCount
+  nameWithType: PaginationResult<TItem>.PageCount
+  nameWithType.vb: PaginationResult(Of TItem).PageCount
+- uid: Celerik.NetCore.Services.PaginationResult`1.RecordCount
+  name: RecordCount
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_RecordCount
+  commentId: P:Celerik.NetCore.Services.PaginationResult`1.RecordCount
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.RecordCount
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).RecordCount
+  nameWithType: PaginationResult<TItem>.RecordCount
+  nameWithType.vb: PaginationResult(Of TItem).RecordCount
+- uid: Celerik.NetCore.Services.PaginationResult`1.RecordCount*
+  name: RecordCount
+  href: api/Celerik.NetCore.Services.PaginationResult-1.html#Celerik_NetCore_Services_PaginationResult_1_RecordCount_
+  commentId: Overload:Celerik.NetCore.Services.PaginationResult`1.RecordCount
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.PaginationResult<TItem>.RecordCount
+  fullName.vb: Celerik.NetCore.Services.PaginationResult(Of TItem).RecordCount
+  nameWithType: PaginationResult<TItem>.RecordCount
+  nameWithType.vb: PaginationResult(Of TItem).RecordCount
+- uid: Celerik.NetCore.Services.ServiceResources
+  name: ServiceResources
+  href: api/Celerik.NetCore.Services.ServiceResources.html
+  commentId: T:Celerik.NetCore.Services.ServiceResources
+  fullName: Celerik.NetCore.Services.ServiceResources
+  nameWithType: ServiceResources
+- uid: Celerik.NetCore.Services.ServiceResources.Get(System.String)
+  name: Get(String)
+  href: api/Celerik.NetCore.Services.ServiceResources.html#Celerik_NetCore_Services_ServiceResources_Get_System_String_
+  commentId: M:Celerik.NetCore.Services.ServiceResources.Get(System.String)
+  fullName: Celerik.NetCore.Services.ServiceResources.Get(System.String)
+  nameWithType: ServiceResources.Get(String)
+- uid: Celerik.NetCore.Services.ServiceResources.Get(System.String,System.Object[])
+  name: Get(String, Object[])
+  href: api/Celerik.NetCore.Services.ServiceResources.html#Celerik_NetCore_Services_ServiceResources_Get_System_String_System_Object___
+  commentId: M:Celerik.NetCore.Services.ServiceResources.Get(System.String,System.Object[])
+  name.vb: Get(String, Object())
+  fullName: Celerik.NetCore.Services.ServiceResources.Get(System.String, System.Object[])
+  fullName.vb: Celerik.NetCore.Services.ServiceResources.Get(System.String, System.Object())
+  nameWithType: ServiceResources.Get(String, Object[])
+  nameWithType.vb: ServiceResources.Get(String, Object())
+- uid: Celerik.NetCore.Services.ServiceResources.Get*
+  name: Get
+  href: api/Celerik.NetCore.Services.ServiceResources.html#Celerik_NetCore_Services_ServiceResources_Get_
+  commentId: Overload:Celerik.NetCore.Services.ServiceResources.Get
+  isSpec: "True"
+  fullName: Celerik.NetCore.Services.ServiceResources.Get
+  nameWithType: ServiceResources.Get
+- uid: Celerik.NetCore.Services.SortDirectionType
+  name: SortDirectionType
+  href: api/Celerik.NetCore.Services.SortDirectionType.html
+  commentId: T:Celerik.NetCore.Services.SortDirectionType
+  fullName: Celerik.NetCore.Services.SortDirectionType
+  nameWithType: SortDirectionType
+- uid: Celerik.NetCore.Services.SortDirectionType.Asc
+  name: Asc
+  href: api/Celerik.NetCore.Services.SortDirectionType.html#Celerik_NetCore_Services_SortDirectionType_Asc
+  commentId: F:Celerik.NetCore.Services.SortDirectionType.Asc
+  fullName: Celerik.NetCore.Services.SortDirectionType.Asc
+  nameWithType: SortDirectionType.Asc
+- uid: Celerik.NetCore.Services.SortDirectionType.Desc
+  name: Desc
+  href: api/Celerik.NetCore.Services.SortDirectionType.html#Celerik_NetCore_Services_SortDirectionType_Desc
+  commentId: F:Celerik.NetCore.Services.SortDirectionType.Desc
+  fullName: Celerik.NetCore.Services.SortDirectionType.Desc
+  nameWithType: SortDirectionType.Desc

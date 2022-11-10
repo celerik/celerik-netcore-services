@@ -21,8 +21,8 @@ namespace Celerik.NetCore.Services
         /// <summary>
         /// Provides programmatic configuration for the Console logger.
         /// </summary>
-        public ConsoleLoggerOptions ConsoleLoggerOptions { get; set; }
-            = new ConsoleLoggerOptions
+        public ConsoleFormatterOptions ConsoleLoggerOptions { get; set; }
+            = new ConsoleFormatterOptions
             {
                 TimestampFormat = "[yyyy-MM-dd HH:mm:ss]"
             };

@@ -89,7 +89,7 @@ namespace Celerik.NetCore.Services
         /// <exception cref="InvalidOperationException">If this method
         /// was already called.</exception>
         internal ApiBuilder<TLoggerCategory, TDbContext> AddLogging(
-            ConsoleLoggerOptions options = null)
+            ConsoleFormatterOptions options = null)
         {
             if (IsInvoked(nameof(AddLogging)))
                 throw new InvalidOperationException(
@@ -111,15 +111,13 @@ namespace Celerik.NetCore.Services
                     provider => provider.ToLowerInvariant().Trim());
 
                 if (providerList.Contains(ApiLogProvider.Console.GetDescription()))
-                    builder.AddConsole(opts =>
+                    builder.AddSystemdConsole(opts =>
                     {
                         if (options != null)
                         {
                             opts.IncludeScopes = options.IncludeScopes;
-                            opts.DisableColors = options.DisableColors;
-                            opts.Format = options.Format;
-                            opts.LogToStandardErrorThreshold = options.LogToStandardErrorThreshold;
                             opts.TimestampFormat = options.TimestampFormat;
+                            opts.UseUtcTimestamp = options.UseUtcTimestamp;
                         }
                     });
 

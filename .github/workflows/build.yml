@@ -7,7 +7,7 @@ env:
   SOLUTION_FILE: '**/*.sln'
   TEST_PROJECT: '**/**/*Test.csproj'
   TEST_FOLDER: './source/*.Test/'
-  COVERAGE_FILE: ./source/coverage.info 
+  COVERAGE_FILE: ./source/*.Test/coverage.json 
 
 jobs:
   build:

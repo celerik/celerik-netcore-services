@@ -12,7 +12,7 @@
     <PackageId>Celerik.NetCore.Services</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/celerik/celerik-netcore-services</PackageProjectUrl>
-    <PackageReleaseNotes>Upgrated target framework to .NET 6.0</PackageReleaseNotes>
+    <PackageReleaseNotes>Added ApiServiceInfo</PackageReleaseNotes>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageTags>csharp, netcore, visual-studio, services, nuget</PackageTags>
     <RepositoryType>Git</RepositoryType>
@@ -22,7 +22,7 @@
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <TargetFramework>net6.0</TargetFramework>
     <Title>Celerik.NetCore.Services</Title>
-    <Version>3.0.2</Version>
+    <Version>3.0.3</Version>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -68,6 +68,7 @@
     <Compile Include="Core\ApiBuilder.cs" />
     <Compile Include="Model\ApiError.cs" />
     <Compile Include="Model\ApiResponse.cs" />
+    <Compile Include="Model\ApiServiceInfo.cs" />
     <Compile Include="Model\ApiServiceArgs.cs" />
     <Compile Include="Model\ApiServiceArgsEF.cs" />
     <Compile Include="Pagination\PaginationEnums.cs" />
